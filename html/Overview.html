@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khazar</title>
+    <link rel="icon" href="/e:/WEB DEVELOPMENT/Khazar Hotel/images/LinkLogo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="E:\WEB DEVELOPMENT\Khazar Hotel\css\overview.css">
+    <style>
+        @media(max-width:768px){
+            .hiddingsam{
+                display: none;
+            }
+            #mdNa{
+                display: none;
+            }
+            .mapFooter{
+                display: none;
+            }
+        }
+    
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar-nav" data-bs-offset="50">
+    <div class="container-fluid">
+        <div class="row ">
+            <div class="col bg-dark d-flex justify-content-between">
+                <div class="offcanvas offcanvas-start" id="demo">
+                    <div class="offcanvas-header">
+                        <h1 class="offcanvas-title">Khazarstan Government Scholarship</h1>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul>
+                            <li class="active"><a>Home</a></li>
+                            <li><a>Application/Login</a></li>
+                            <li><a>Alumni</a></li>
+                            <li><a>Contact</a></li>
+                            <li><a>About</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="btn text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                    |||
+                </button>
+                <div>
+                    <button class=" loginSignin px-2 py-1" type="button" data-bs-toggle="modal" data-bs-target="#modalJoin"><img height="20px" class="me-2"
+                            src="E:\WEB DEVELOPMENT\Khazar Hotel\images\signinlogin.png" width="20px">Sign in or Join</button>
+                    <img src="E:\WEB DEVELOPMENT\Khazar Hotel\images\LinkLogo2.jpg" class="rounded-5" alt="Khazar Hotel" height="30px" width="30px">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-5"><p class="display-5 mt-2 logoTxt">Khazarstan Scholarship</p></div>
+                    <div class="col-7">
+                        <div class="container d-flex justify-content-end">
+                            <nav class="navbar navbar-expand-sm">
+                                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span
+                                        class="navbar-toggler-icon"></span></button>
+                                <div class="collapse navbar-collapse" id="navbarNav">
+                                    <ul class="navbar-nav mt-4 navbarLinks">
+                                        <li class="nav-item"><a class="nav-link navLinka active">Overview</a></li>
+                                        <li class="nav-item"><a class="nav-link navLinka" href="#programs">Programs</a></li>
+                                        <li class="nav-item"><a class="nav-link navLinka" href="#frequent">Frequent Questions</a></li>
+                                        <li class="nav-item"><a class="nav-link navLinka" href="#experience">Experiences</a></li>
+                                        <li class="nav-item"><a class="nav-link navLinka" href="#mapPart">Map</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="hiddingsam sticky-top">
+            <div class="sticky-top row bg-white d-flex mdNav" id="mdNav">
+                <div class="container-fluid mb-2 shadow">
+                    <div class="col navBoxShadow d-flex justify-content-between">
+                        <div class="d-flex">
+                            <p class="fixedText">Khazar & Bayat Scholarships</p>
+                            <div class="d-flex mt-3 ms-2">
+                                <div class="ratingC mx-1"></div>
+                                <div class="ratingC mx-1"></div>
+                                <div class="ratingC mx-1"></div>
+                                <div class="ratingC mx-1"></div>
+                                <div class="ratingD mx-1"></div>
+                            </div>
+                            <p style="font-size:medium; font-weight: lighter; text-decoration-line: underline; font-family: Arial, Helvetica, sans-serif;"
+                                class="mt-3 ms-2">150000 Registered</p>
+                        </div>
+                        <div class="d-flex m-3">
+                            <p style="text-decoration-line: underline;" class="me-2" id="phoneLocation"><img
+                                    class="phoneLocation me-1" src="E:\WEB DEVELOPMENT\Khazar Hotel\images\locationicon.png">VIEW
+                                MAP</p>
+                            <p style="text-decoration-line: underline;" id="phoneLocation"><img class="phoneLocation me-1"
+                                    src="E:\WEB DEVELOPMENT\Khazar Hotel\images\phoneicon.png">+93-74-94-72-533</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <hr class="boxShadowing"> -->
+                <div class="row">
+                    <div class="col ms-5 d-flex justify-content-between">
+                        <div class="col d-flex">
+                            <div>
+                                <div>
+                                    <p
+                                        style="color:rgb(189, 185, 185); font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                                        <span><img alt="date" src="E:\WEB DEVELOPMENT\Khazar Hotel\images\dateicon.png"></span>
+                                        Deadline
+                                    </p>
+                                </div>
+                                <div>
+                                    <p
+                                        style="font-size: medium; font-weight: lighter; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+                                        Sat, Jan 01 : Mon, Dec 31 </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col d-flex">
+                            <div>
+                                <div>
+                                    <p
+                                        style="color:rgb(189, 185, 185); font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                                        Program Search</p>
+                                </div>
+                                <div>
+                                    <p
+                                        style="font-size: medium; font-weight: lighter; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+                                        5000, Education Program </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div>
+                                <p
+                                    style="color:rgb(189, 185, 185); font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                                    Partners</p>
+                            </div>
+                            <div>
+                                <p
+                                    style="font-size: medium; font-weight: lighter; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+                                    Contributions
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col mt-3">
+                            <button type="button" class="btn text-white btn-info btn-lg" style="border-radius: 20px;">View Rates</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="carousel slide" id="mood" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-flex">
+                            <img class="d-block w-50" style="max-height: 400px;" alt="firstSlide"
+                                src="E:\WEB DEVELOPMENT\Khazar Hotel\images\sch1.jpg">
+                            <img class="d-block w-50" style="max-height: 400px;" alt="firstSlide"
+                                src="E:\WEB DEVELOPMENT\Khazar Hotel\images\sch2.jpg">
+                            <img class="d-block w-50" style="max-height: 400px;" alt="firstSlide"
+                                src="E:\WEB DEVELOPMENT\Khazar Hotel\images\sch3.jpg">
+                        </div>
+                        <div class="carousel-caption">
+                            <h3>Fully Funded</h3>
+                            <p>Covers tuition, accommodation, and living expenses.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" style="max-height: 400px;" alt="thirdSlide" src="E:\WEB DEVELOPMENT\Khazar Hotel\images\sch7.jpg">
+                        <div class="carousel-caption">
+                            <h3> Career Opportunities</h3>
+                            <p>Offers networking and job prospects.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" style="max-height: 400px;" alt="thirdSlide"
+                            src="E:\WEB DEVELOPMENT\Khazar Hotel\images\sch6.jpg">
+                        <div class="carousel-caption">
+                            <h3>Quality Education</h3>
+                            <p>Provides top-ranked universities and programs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-toggle="carousel" data-bs-target="#mood" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-toggle="carousel" data-bs-target="#mood" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-toggle="carousel" data-bs-target="#mood" data-bs-slide-to="2"></button>
+                </div>
+                <button type="button"  data-bs-slide="prev" data-bs-target="#mood" class="carousel-control-prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button type="button" data-bs-slide="next" data-bs-target="#mood" class="carousel-control-next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+        <div class="row d-md-flex flex-column align-items-center">
+            <div class="mt-3 text-center text-black-50" style="font-family: 'Times New Roman', Times, serif;">Welcome to the Khazarstan Scholarship Program</div>
+            <div class="display-5 text-center" style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Transformative Educational Opportunities</div>
+            <div class="row d-flex justify-content-center my-4">
+                <div class="col borderLineRight">
+                    Enjoy full financial support, including tuition, accommodation, and living expenses.
+                </div>
+                <div class="col borderLineRight">
+                    Experience top-tier universities with diverse academic programs.
+                </div>
+                <div class="col borderLineRight">
+                    Scholars receive mentorship, career support, and cultural exchange opportunities.
+                </div>
+            </div>
+            <div class="seeMore" style="text-decoration: underline; font-family: Arial, Helvetica, sans-serif;">See More</div>
+        </div>
+        <div class="row mt-5">
+            <div class="d-flex justify-content-center flex-column align-items-center">
+                <div style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">_________TURKEY SCHOLARSHIP PROGRAM_________</div>
+                <div style="font-family: 'Times New Roman', Times, serif;" class="mt-4">Apply for this scholarship and unlock free education and opportunities for a brighter future.</div>
+                <div class="mt-3 rounded-pill"><button class="h6 btn btn-outline-primary">Apply Now</button></div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="d-flex justify-content-center align-items-center flex-column">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item border-bottom border-2 border-primary"><a class="nav-link active" data-bs-toggle="tab" href="#allPrograms">All Programs</a></li>
+                    <li class="nav-item border-bottom border-2 border-primary"><a class="nav-link" data-bs-toggle="tab" href="#availSch">Available Scholarships</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="row" id="programs">
+            <div class="tab-content">
+                <div class="tab-pane container active" id="allPrograms">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card shadow-lg cardD rounded-5">
+                                <img class="card-image-top rounded-top-5  bedImg img-fluid" alt="card1" src="E:\WEB DEVELOPMENT\Khazar Hotel\images\prg1.jpg">
+                                <div class="card-header bg-white">
+                                    <div class="card-title h5">Artficial Intelligence</div>
+                                    <p style="font-family:serif;">Five Related Majors</p>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <div><p class="seeMore" style="text-decoration: underline; font-family: Arial, Helvetica, sans-serif;">View More</p></div>
+                                        <div><button class="btn rounded-pill btn-sm btn-primary">View Rates</button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card rounded-5">
+                                <img class="card-image-top rounded-top-5 shadow-lg bedImg img-fluid" alt="card1" src="E:\WEB DEVELOPMENT\Khazar Hotel\images\prg2.jpg">
+                                <div class="card-header bg-white">
+                                    <div class="card-title h5">Computer Science</div>
+                                    <p style="font-family:serif;">Twelve Related Programs</p>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <p class="seeMore" style="text-decoration: underline; font-family: Arial, Helvetica, sans-serif;">
+                                                View More</p>
+                                        </div>
+                                        <div><button class="btn btn-primary btn-sm rounded-pill">View Rates</button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col">
+                            <div class="card rounded-5">
+                                <img class="card-image-top shadow-lg rounded-top-5 bedImg img-fluid" alt="card1" src="E:\WEB DEVELOPMENT\Khazar Hotel\images\prg3.jpg">
+                                <div class="card-header bg-white">
+                                    <div class="card-title h5">Engineering</div>
+                                    <p style="font-family:serif;">Eight Related Programs</p>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <p class="seeMore" style="text-decoration: underline; font-family: Arial, Helvetica, sans-serif;">
+                                                View More</p>
+                                        </div>
+                                        <div><button class="btn btn-primary btn-sm rounded-pill">View Rates</button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card rounded-5">
+                                <img class="card-image-top shadow-lg rounded-top-5 bedImg img-fluid" alt="card1" src="E:\WEB DEVELOPMENT\Khazar Hotel\images\prg4.jpg">
+                                <div class="card-header bg-white">
+                                    <div class="card-title h5">Pharmacy</div>
+                                    <p style="font-family:serif;">Three Related Programs</p>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <p class="seeMore" style="text-decoration: underline; font-family: Arial, Helvetica, sans-serif;">
+                                                View More</p>
+                                        </div>
+                                        <div><button class="btn btn-primary btn-sm rounded-pill">View Rates</button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col">
+                            <div class="card rounded-5">
+                                <img class="card-image-top shadow-lg rounded-top-5 bedImg img-fluid" alt="card1" src="E:\WEB DEVELOPMENT\Khazar Hotel\images\prg5.jpg">
+                                <div class="card-header bg-white">
+                                    <div class="card-title h5">Medical science</div>
+                                    <p style="font-family:serif;">Twenty Related Programs</p>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <p class="seeMore" style="text-decoration: underline; font-family: Arial, Helvetica, sans-serif;">
+                                                View More</p>
+                                        </div>
+                                        <div><button class="btn btn-primary btn-sm rounded-pill">View Rates</button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card rounded-5">
+                                <img class="card-image-top shadow-lg rounded-top-5 img-fluid bedImg" alt="card1" src="E:\WEB DEVELOPMENT\Khazar Hotel\images\prg6.jpg">
+                                <div class="card-header bg-white">
+                                    <div class="card-title h5">History</div>
+                                    <p style="font-family:serif;">Six Related Programs</p>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <p class="seeMore" style="text-decoration: underline; font-family: Arial, Helvetica, sans-serif;">
+                                                View More</p>
+                                        </div>
+                                        <div><button class="btn btn-primary btn-sm rounded-pill">View Rates</button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane container fade" id="availSch">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card rounded-5">
+                                <img class="card-image-top shadow-lg rounded-top-5 bedImg img-fluid" alt="card1"
+                                    src="E:\WEB DEVELOPMENT\Khazar Hotel\images\LinkLogo2.jpg">
+                                <div class="card-header bg-white">
+                                    <div class="card-title h5">Khazarstan Government Scholarship</div>
+                                    <p style="font-family:serif;">5000 sets available</p>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <p class="seeMore"
+                                                style="text-decoration: underline; font-family: Arial, Helvetica, sans-serif;">View More</p>
+                                        </div>
+                                        <div><button class="btn btn-primary btn-sm rounded-pill">Apply</button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card rounded-5">
+                                <img class="card-image-top shadow-lg rounded-top-5 bedImg img-fluid" alt="card1"
+                                    src="E:\WEB DEVELOPMENT\Khazar Hotel\images\LinkLogo3.jpg">
+                                <div class="card-header bg-white">
+                                    <div class="card-title h5">Bayat Scholarship</div>
+                                    <p style="font-family:serif;">10000 sets available</p>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <p class="seeMore"
+                                                style="text-decoration: underline; font-family: Arial, Helvetica, sans-serif;">
+                                                View More</p>
+                                        </div>
+                                        <div><button class="btn btn-primary btn-sm rounded-pill">Apply</button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <p class="text-center" style="font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Please note: all scholarships are limited.</p>
+        </div>
+        <div class="row mt-5 mb-5 bg-light">
+            <div class="row"></div>
+            <div class="d-flex justify-content-around mt-5">
+                <div>
+                    <div><p  class="h3" style="font-family: 'Times New Roman', Times, serif;">Achieve Together</p></div>
+                    <div><p class="h2" style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Join a Community of Scholars and Shape Your Future.</p></div>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-primary btn-lg btn-info text-white rounded-pill ">Contact Us to Get Started</button>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5" id="frequent">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <h2 class="mb-5 mt-5 ms-3" style="font-family: 'Times New Roman', Times, serif;">Frequently Asked Questions</h2>
+                <div id="parent">
+                    <div class="d-grid">
+                        <button class=" btn btn-block text-start" data-bs-toggle="collapse" data-bs-target="#n1"><p class="h6 text-black-50">What is the Khzarstan Government Scholarship?</p></button>
+                        <div id="n1" class="collapse" data-bs-parent="#parent">
+                            <div class="h6 text-start m-3">
+                                The Khazarstan Government Scholarship is a fully funded program that provides international students with
+                                the opportunity to pursue higher education in Khazarstan. It covers tuition fees and may include additional benefits
+                                such as a monthly stipend and accommodation.
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="d-grid">
+                        <button class="btn btn-block text-start" data-bs-toggle="collapse" data-bs-target="#n2"><p class="h6 text-black-50">Who is eligible to apply for this scholarship?</p></button>
+                        <div id="n2" class="collapse" data-bs-parent="#parent">
+                            <div class="text-start m-3 h6">
+                                Applicants must meet the following criteria:
+                                <ul>
+                                    <li>Be a citizen of an eligible country (varies by program).</li>
+                                    <li>Have a strong academic background.</li>
+                                    <li>Meet language proficiency requirements (English)</li>
+                                    <li>Fulfill any additional requirements set by the specific university or degree program.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="d-grid">
+                        <button class="btn btn-block text-start" data-bs-toggle="collapse" data-bs-target="#n3"><p class="h6 text-black-50">What academic programs are covered by the scholarship?</p>
+</button>
+                        <div id="n3" class="collapse " data-bs-parent="#parent">
+                            <div class="text-start m-3 h6">
+                                The scholarship covers bachelor’s, master’s, and doctoral degree programs in various fields, including engineering,
+                                natural sciences, humanities, and social sciences.
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="d-grid">
+                        <button class="btn btn-block text-start" data-bs-toggle="collapse" data-bs-target="#n4">
+                            <p class="h6 text-black-50">What expenses are covered by the scholarship?</p>
+                        </button>
+                        <div id="n4" class="collapse" data-bs-parent="#parent">
+                            <div class="h6 text-start m-3">
+                                The Khazarstan Government Scholarship may cover:
+                                <ul>
+                                    <li>Full tuition fees</li>
+                                    <li>A monthly stipend for living expenses (for some programs)</li>
+                                    <li>Accommodation assistance (depending on the university)</li>
+                                    <li>Medical insurance (varies by institution)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="d-grid">
+                        <button class="btn btn-block text-start" data-bs-toggle="collapse" data-bs-target="#n5">
+                           <p class="h6 text-black-50">What documents are required for the application?</p>
+                        </button>
+                        <div id="n5" class="collapse" data-bs-parent="#parent">
+                            <div class="h6 text-start m-3">
+                                The required documents may include:
+                                <ul>
+                                    <li>A valid passport or national ID</li>
+                                    <li>Academic transcripts and diplomas</li>
+                                    <li>A statement of purpose or motivation letter</li>
+                                    <li>Letters of recommendation</li>
+                                    <li>Proof of language proficiency (IELTS, TOEFL, or equivalent)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="d-grid">
+                        <button class="btn btn-block text-start" data-bs-toggle="collapse" data-bs-target="#n6">
+                            <p class="h6 text-black-50">How competitive is the scholarship?</p>
+                        </button>
+                        <div id="n6" class="collapse text-start" data-bs-parent="#parent">
+                            <div class="h6 text-start m-3">
+                                The Khazarstan Government Scholarship is highly competitive, with thousands of applicants worldwide. A strong academic
+                                record, leadership experience, and a well-written motivation letter can improve your chances of selection.
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <div class="row shadow-lg bg-dark sectionCursor mapFooter" id="experience">
+            <div class=" d-flex justify-content-center text-white">
+                <button class="btn btn-large bg-white text-black m-5" style="font-weight: bold; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Apply N<span style="text-decoration-line: underline; text-decoration-color: rgb(219, 135, 135);">o</span>W</button>
+                <div class="m-5 d-flex flex-column">
+                    <div>Unlock Your Future</div>
+                    <di>Achieve Your Dreams with the Kazakhstan Government Scholarship.</di>
+                </div>
+                <div class="m-5 fw-bold fs-2 text-light">&#8594;</div>
+            </div>
+        </div>
+        <div class="row mapSection mapFooter" id="mapPart">
+            <p class="h2 mt-5 text-center text-white" style="font-family: 'Times New Roman', Times, serif;">Transform Your Education Journey with the Khazarstan Government Scholarship Program.</p>
+            <div class="d-flex justify-content-around">
+                <div class="d-flex flex-column text-white" style="font-family:'Courier New', Courier, monospace;">
+                    <p style="text-decoration: underline white; cursor: pointer;">Application/Login</p>
+                    <p style="text-decoration: underline white; cursor: pointer;">Alumni</p>
+                    <p style="text-decoration: underline white; cursor: pointer;">Discover</p>
+                    <p style="text-decoration: underline white; cursor: pointer;">About</p>
+                    <p style="text-decoration: underline white; cursor: pointer;">Contact</p>
+                </div>
+                <div class="d-flex flex-column text-white">
+                    <p>District 6th, West Kabul</p>
+                    <p>Kabul University, Kabul, Afghanistan, 1006</p>
+                    <p>Fax: +93 74-94-72533</p>
+                </div>
+            </div>
+        </div>
+        <div class="row bg-black" id="footer">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-9">
+                    <div class="mt-3 breadcrumb text-white mapFooter" style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: small; cursor: pointer;">
+                        <div class="breadcrumb-item">Khazarstan Government Scholarship</div>
+                        <div class="breadcrumb-item">Home</div>
+                        <div class="breadcrumb-item">Application/Login</div>
+                        <div class="breadcrumb-item">Alumni</div>
+                        <div class="breadcrumb-item">About</div>
+                    </div>
+                    <hr style="color:white; font-weight: bold;" class="mapFooter">
+                    <div id="parent">
+                        <div class="d-grid">
+                            <button class=" btn btn-block text-start" data-bs-toggle="collapse" data-bs-target="#n1">
+                                <p class="h5 text-white-50">Khazarstan Scholarship
+                                </p>
+                            </button>
+                            <div id="n1" class="collapse" data-bs-parent="#parent">
+                                <div class="h6 text-start m-3">
+                                    Gain access to fully funded scholarships in Khazarstan, covering tuition, accommodation, and living expenses, while
+                                    pursuing higher education and cultural enrichment.
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="d-grid">
+                            <button class="btn btn-block text-start" data-bs-toggle="collapse" data-bs-target="#n2">
+                                <p class="h5 text-white-50">Khazarstan Study Opportunity</p>
+                            </button>
+                            <div id="n2" class="collapse" data-bs-parent="#parent">
+                                <div class="text-start m-3 h6">
+                                    Take advantage of the Khazarstan Government Scholarship, which provides full financial support for tuition fees,
+                                    accommodation, and living costs, while experiencing world-class education.
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="d-grid">
+                            <button class="btn btn-block text-start" data-bs-toggle="collapse" data-bs-target="#n3">
+                                <p class="h5 text-white-50">Our Community</p>
+                            </button>
+                            <div id="n3" class="collapse " data-bs-parent="#parent">
+                                <div class="text-start m-3 h6">
+                                    Join the Khazarstan scholarship program to study at leading institutions, with all expenses covered, including tuition,
+                                    living allowances, and more, for an enriching educational experience.
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="d-grid">
+                            <div class="d-flex justify-content-start">
+                                <div><p class="h6 text-start mt-2">Follow us</p></div>
+                                <div class="d-flex ms-5">
+                                    <img src="E:\WEB DEVELOPMENT\Khazar Hotel\images\in.png" class="img-fluid medias" alt="medias">
+                                    <img src="E:\WEB DEVELOPMENT\Khazar Hotel\images\facebook.png" class="img-fluid medias" alt="medias">
+                                    <img src="E:\WEB DEVELOPMENT\Khazar Hotel\images\youtube.png" class="img-fluid medias" alt="medias">
+                                    <img src="E:\WEB DEVELOPMENT\Khazar Hotel\images\instgrm.png" class="img-fluid medias" style="max-width: 45px; max-height: 45px;" alt="medias">
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="d-grid">
+                            <p class="h4 text-start ms-2">© 1996-2025 Kazakhstan Government Scholarship Program. All rights reserved. Scholarship Proprietary Information.</p>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+                <div class="col-2"></div>
+            </div>
+        </div>
+
+    </div>
+    <div class="modal fade" id="modalJoin">
+        <div class="modal-dialog modal-dialog-center modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="modal-title h3">Welcome to Khazarstan Government Scholarship</p>
+                    <button class="btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                   <div class="row">
+                        <div class="col-8">
+                            <p class="h5">Sign in</p>
+                            <form method="post">
+                                <div class="form-floating mb-3 mt-3">
+                                    <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
+                                    <label for="email">Email</label>
+                                </div>
+                        
+                                <div class="form-floating mt-3 mb-3">
+                                    <input type="text" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                                    <label for="pwd">Password</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="check1" name="option1" value="Remember me" checked>
+                                    <label class="form-check-label">Remember me</label>
+                                </div>
+                                <div class="mt-3">
+                                    <button type="submit" class="btn btn-dark text-white rounded-pill btn-lg">Sign In</button>
+                                </div>
+                                <div class="mt-3">
+                                    <p
+                                        style="font-family: 'Times New Roman', Times, serif;text-decoration-line: underline; text-decoration-color: black; color:black">
+                                        Forgot Password</p>
+                                    <p
+                                        style="font-family: 'Times New Roman', Times, serif;text-decoration-line: underline; text-decoration-color: black; color:black">
+                                        Activate online account</p>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col border-start border-2 border-black"></div>
+                        <div class="col-3">
+                            <p class="h4">Join the Khazarstan Scholarship Program</p>
+                            <p>Scholarship recipients receive full financial support, including tuition, accommodation, and exclusive academic
+                            benefits.</p>
+                            <button type="button" class="rounded-pill btn btn-outline-dark">Join for Free</button>
+                        </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
