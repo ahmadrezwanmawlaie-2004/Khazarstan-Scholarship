@@ -1,0 +1,14 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.about-section{
+    background: url("prg3.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.details{
+    background-color: rgb(255, 255, 255, .3);
+    overflow: visible;
+}
