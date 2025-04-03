@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <style>
+        /* This page have the same content twice, but the first content is for one type of screen, and the other same content is for other screen, ecpecially for phones screen sizes. */
         @media (767px <= width <=1400px) {
             #smallScreen{
                 display: none;
@@ -21,13 +22,32 @@
                 display: none;
             }
         }
+        /* The selection pesudo class specify the color for highlighting a content */
         #logoTitle::selection{
             background-color: rgba(255, 255, 255, 0.8);
         }
     </style>
 </head>
 <body>
+    <!-- The body section have the same content twice, the first content with id fullScreen
+     and the second content with id smallScreen -->
+
+     <!--  -->
+     <!--  -->
+     <!--  -->
+     <!-- This first content has different and unique structure 
+      from the second content-->
+
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!-- This section has one general container -->
     <div class="container-fluid about-section" id="fullScreen">
+        <!-- The container section has two general rows -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!-- The first row section is for flag and title -->
         <div class="row">
            <div class="d-flex  mt-3">
                 <div class=""><img class="img-fluid" style="max-height: 100px; max-width: 100px; border-radius: 50%;"
@@ -37,8 +57,11 @@
                 </div>
            </div>
         </div>
+        <!-- The second row section is for contents -->
         <div class="row about-container mt-5" id="logoTitle">
+            <!-- The second row has three general columns -->
             <div class="col">
+                <!-- The first column has only title and content -->
                 <div class="details border-1 border-black rounded-top">
                     <div>
                         <div class="col-2"><h2 class="border-bottom border-5 border-white text-white-50">About Us</h2></div>
@@ -58,8 +81,13 @@
                     </p>
                 </div>
             </div>
+            <!--  -->
+            <!--  -->
+            <!--  -->
+            <!-- The second columns has one row and two columns within  -->
             <div class="col">
                 <div class="row d-flex flex-column">
+                    <!-- The first column of inside have the same title and content -->
                     <div class="col">
                         <div class="details border-1 border-black rounded-top">
                             <div>
@@ -75,6 +103,8 @@
                             </p>
                         </div>
                     </div>
+                    
+                    <!-- The second col has the same content -->
                     <div class="col">
                         <div class="details border-1 border-black rounded-top">
                             <div>
@@ -92,9 +122,15 @@
                     </div>
                 </div>
             </div>
+            <!--  -->
+            <!--  -->
+            <!--  -->
+            <!-- This column also have one row and two columns within-->
             <div class="col">
                 <div class="row">
+                    
                     <div class="col">
+                        <!-- The first column inside have title and content -->
                         <div class="details border-1 border-black rounded-top">
                             <div>
                                 <div class="col-8">
@@ -112,6 +148,7 @@
                             </p>
                         </div>
                     </div>
+                    <!-- The first column inside have title and content -->
                     <div class="col">
                         <div class="col">
                             <div class="details border-1 border-black rounded-top">
@@ -158,7 +195,12 @@
             
         </div>
     </div>
+
+
+    <!-- The second content with the same content is general divided
+     to six row inside the container. The structure is simple and the same for all rows -->
     <div class="container-fluid about-section" id="smallScreen">
+        <!-- This row is specifically for flag and title -->
         <div class="row">
             <div class="d-flex  mt-3">
                 <div class=""><img class="img-fluid" style="max-height: 100px; max-width: 100px; border-radius: 50%;"
@@ -170,6 +212,7 @@
                 </div>
             </div>
         </div>
+        <!-- This row includes one title and content -->
         <div class="row mt-5" id="logoTitle" >
             <div class="details border-1 border-black rounded-top">
                 <div>
@@ -196,6 +239,7 @@
                 </p>
             </div>
         </div>
+        <!-- This row includes one title and content -->
         <div class="row mt-3" id="logoTitle">
             <div class="details border-1 border-black rounded-top">
                 <div>
@@ -214,6 +258,7 @@
                 </p>
             </div>
         </div>
+        <!-- This row includes one title and content -->
         <div class="row mt-3" id="logoTitle">
             <div class="details border-1 border-black rounded-top">
                 <div>
@@ -231,6 +276,7 @@
                 </p>
             </div>
         </div>
+        <!-- This row includes one title and content -->
         <div class="row mt-3" id="logoTitle">
             <div class="details border-1 border-black rounded-top">
                 <div>
@@ -249,6 +295,7 @@
                 </p>
             </div>
         </div>
+        <!-- This row includes one title and content -->
         <div class="row mt-3" id="logoTitle">
             <div class="details border-1 border-black rounded-top">
                 <div>
