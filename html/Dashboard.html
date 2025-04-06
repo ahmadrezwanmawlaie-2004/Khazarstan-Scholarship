@@ -17,7 +17,7 @@
                     <h3 id="headTitle" class="mt-4 text-info">khazar app</h3>
                     <img class="img-fluid" alt="Logo" src="E:\WEB DEVELOPMENT\Khazarstan Scholarship\images\LinkLogo4.png" width="80" height="80">
                 </div>
-                <div class=" d-sm-flex border border-5 border-info rounded-1 mt-3 gap-2 justify-content-center align-items-center ">
+                <div class=" d-sm-flex border border-5 border-info rounded-3 mt-3 gap-2 justify-content-center align-items-center ">
                     <div class="d-flex justify-content-center align-items-center">
                         <img class="img-fluid" src="E:\WEB DEVELOPMENT\Khazarstan Scholarship\images\user.png" alt="UserInfo" height="50" width="50">
                     </div>
@@ -33,22 +33,62 @@
             </div>
             <hr class="border border-2 border-info opacity-100 mt-2">
         </div>
-        <div class="row navbarP">
+        <div class="row navbarP sticky-top shadow" style="background-color: aliceblue; font-family:Arial, Helvetica, sans-serif;">
             <nav class="navbar navbar-expand-sm">
                 <div class="container-fluid">
                     <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle-navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav d-flex justify-content-around align-items-center w-100">
-                            <li class="nav-item btn btn-info"><a class="nav-link btn btn-outline-primary text-white fw-bold">Dashboard</a></li>
-                            <li class="nav-item btn btn-info"><a class="nav-link btn btn-outline-primary text-white fw-bold">My Colleges</a></li>
-                            <li class="nav-item btn btn-info"><a class="nav-link btn btn-outline-primary text-white fw-bold">Khazar App</a></li>
-                            <li class="nav-item btn btn-info"><a class="nav-link btn btn-outline-primary text-white fw-bold">College Search</a></li>
-                            <li class="nav-item btn btn-info"><a class="nav-link btn btn-outline-primary text-white fw-bold">Financial Aid</a></li>
+                        <ul class="navbar-nav d-flex justify-content-around w-100 gap-2 mt-2">
+                            <li class="nav-item btn btn-info"><a class="nav-link text-white fw-bold">Dashboard</a></li>
+                            <li class="nav-item btn btn-info"><a class="nav-link text-white fw-bold">My Colleges</a></li>
+                            <li class="nav-item btn btn-info"><a class="nav-link text-white fw-bold">Khazar App</a></li>
+                            <li class="nav-item btn btn-info"><a class="nav-link text-white fw-bold">College Search</a></li>
+                            <li class="nav-item btn btn-info"><a class="nav-link  text-white fw-bold">Financial Aid</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </div>
+        <div class="row universityP">
+            <div class="container-fluid" style="background-color:#E6E6FA; min-height: 500px;">
+                <div class="container">
+                    <div class="container border border-5 border-light rounded-3 mt-3">
+                        <div class="row">
+                            <div class="d-flex justify-content-between align-items-center mt-2">
+                                <div>
+                                    <h1 class="text-white-50 fw-bold" style="font-family: 'Times New Roman', Times, serif;">Universities</h1>
+                                </div>
+                                <div">
+                                    <input type="text" class="form-control" placeholder="Search for universities..." aria-label="Search">
+                                </div>
+                            </div>
+                            <hr class="border border-2 border-light opacity-100 mt-2">
+                            <div class="row border border-1 border-white rounded-2 shadow-lg mx-1  mb-2" id="FirstUniversity">
+                                <div class="d-flex p-3 justify-content-between">
+                                    <div class="d-flex justify-content-center align-items-center gap-2">
+                                        <div>
+                                            <img class="img-fluid rounded-2" height="150" width="150" id="university1"
+                                                src="E:\WEB DEVELOPMENT\Khazarstan Scholarship\images\sch6.jpg" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <h4 style="font-family: Arial, Helvetica, sans-serif;" class="fw-bold">Kabul University</h4>
+                                            <h6><span id="decisionType1" class="text-black-50">Early Decision</span> : <span>Deadline - <span id="deadline1" class="text-light">Jan 30</span></span></h6>
+                                            <p class="seeMore" style="text-decoration: underline; font-family: Arial, Helvetica, sans-serif; cursor: pointer;">See More</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <div class="mb-2"><button type="button" class="btn btn-outline-info btn">Details</button></div>
+                                        <div><button type="button" onclick="universityFirstHidden()" class="btn btn-outline-info btn">Remove</button></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
+<script src="E:\WEB DEVELOPMENT\Khazarstan Scholarship\javascript\Dashboard.js"></script>
 </html>
