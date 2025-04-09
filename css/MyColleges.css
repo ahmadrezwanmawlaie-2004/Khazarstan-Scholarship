@@ -23,3 +23,7 @@
 #pFont{
     font-family: 'Times New Roman', Times, serif;
 }
+
+.colleges{
+    display: none;
+}

@@ -65,17 +65,157 @@
         <div class="row universityP">
             <div class="container" style="background-color:#E6E6FA; min-height: 500px;">
                 <div class="row mt-3">
-                    <div class="col-2">
+                    <div class="col-lg-2 col-xxl-2 col-md col-sm">
                         <div class="mx-3 border">
                             <div class="d-sm-flex flex-column">
-                                <button type="button" class="btn btn-primary btn-lg rounded-0 text-start fw-bold">My Colleges</button>
-                                <div class="d-sm-flex flex-column gap-1 d-grid">
-                                    <button type="button" class="btn btn-info btn-block btn-lg text-start rounded-0 uniFont">Kabul University</button>
-                                    <button type="button" class="btn btn-info btn-block btn-lg text-start rounded-0 uniFont">Khazar University</button>
-                                    <button type="button" class="btn btn-info btn-block btn-lg text-start rounded-0 uniFont">Brayan College</button>
-                                    <button type="button" class="btn btn-info btn-block btn-lg text-start rounded-0 uniFont">Bayat College</button>
-                                    <button type="button" class="btn btn-info btn-block btn-lg text-start rounded-0 uniFont">Moryan Univerrsity</button>
-                                    <button type="button" class="btn btn-info btn-block btn-lg text-start rounded-0 uniFont">Kathryan College</button>
+                                <button type="button" class="btn btn-primary  btn-lg rounded-0 text-start fw-bold" >My Colleges</button>
+                                <div class="d-sm-flex flex-column gap-1" id="accordian">
+                                    <div class="card" id="Uni1">
+                                        <button data-bs-toggle="collapse" data-bs-target="#college1"
+                                            class="btn btn-info btn-block btn-lg text-start rounded-0 uniFont">Kabul University</button>
+                                        <div id="college1" class="collapse fade" data-bs-parent="accordian">
+                                            <div class="card-header">
+                                                <div class="card-title">
+                                                    <button type="button" class="btn btn-info border border-1 border-white buttons btn-block text-start rounded-3 text-white uniFont"
+                                                        data-target="myCollege1">College Information</button>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <p style="font-size: small;" class="fw-bold">Application</p>
+                                                <hr class="border border-1 border-info opacity-100">
+                                                <div class="d-md-flex flex-column">
+                                                    <button class="d-block btn btn-light mb-1 text-start fw-bold text-secondary" type="button" style="font-family: 'Times New Roman', Times, serif;">Questions</button>
+                                                    <button class="d-block btn btn-light mb-1 text-start fw-bold text-secondary" type="button" style="font-family: 'Times New Roman', Times, serif;">Recommenders</button>
+                                                    <button class="d-block btn btn-light text-start fw-bold text-secondary" type="button" style="font-family: 'Times New Roman', Times, serif;">Submit</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card" id="Uni2">
+                                        <button data-bs-toggle="collapse" data-bs-target="#college2"
+                                            class="btn btn-info btn-block btn-lg text-start rounded-0 uniFont">Khazar University</button>
+                                        <div id="college2" class="collapse fade" data-bs-parent="accordian">
+                                            <div class="card-header">
+                                                <div class="card-title">
+                                                    <button type="button"
+                                                        class="btn btn-info border border-1 border-white buttons btn-block text-start rounded-3 text-white uniFont"
+                                                        data-target="myCollege2">College Information</button>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <p style="font-size: small;" class="fw-bold">Application</p>
+                                                <hr class="border border-1 border-info opacity-100">
+                                                <div class="d-md-flex flex-column">
+                                                    <button class="d-block btn btn-light mb-1 text-start fw-bold text-secondary" type="button"
+                                                        style="font-family: 'Times New Roman', Times, serif;">Questions</button>
+                                                    <button class="d-block btn btn-light mb-1 text-start fw-bold text-secondary" type="button"
+                                                        style="font-family: 'Times New Roman', Times, serif;">Recommenders</button>
+                                                    <button class="d-block btn btn-light text-start fw-bold text-secondary" type="button"
+                                                        style="font-family: 'Times New Roman', Times, serif;">Submit</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card" id="Uni3">
+                                        <button data-bs-toggle="collapse" data-bs-target="#college3"
+                                            class="btn btn-info btn-block btn-lg text-start rounded-0 uniFont">Brayan College</button>
+                                        <div id="college3" class="collapse fade" data-bs-parent="accordian">
+                                            <div class="card-header">
+                                                <div class="card-title">
+                                                    <button type="button"
+                                                        class="btn btn-info border border-1 border-white buttons btn-block text-start rounded-3 text-white uniFont"
+                                                        data-target="myCollege3">College Information</button>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <p style="font-size: small;" class="fw-bold">Application</p>
+                                                <hr class="border border-1 border-info opacity-100">
+                                                <div class="d-md-flex flex-column">
+                                                    <button class="d-block btn btn-light mb-1 text-start fw-bold text-secondary" type="button"
+                                                        style="font-family: 'Times New Roman', Times, serif;">Questions</button>
+                                                    <button class="d-block btn btn-light mb-1 text-start fw-bold text-secondary" type="button"
+                                                        style="font-family: 'Times New Roman', Times, serif;">Recommenders</button>
+                                                    <button class="d-block btn btn-light text-start fw-bold text-secondary" type="button"
+                                                        style="font-family: 'Times New Roman', Times, serif;">Submit</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card" id="Uni4">
+                                        <button data-bs-toggle="collapse" data-bs-target="#college4"
+                                            class="btn btn-info btn-block btn-lg text-start rounded-0 uniFont">Bayat College</button>
+                                        <div id="college4" class="collapse fade" data-bs-parent="accordian">
+                                            <div class="card-header">
+                                                <div class="card-title ">
+                                                    <button type="button"
+                                                        class="btn btn-info border border-1 border-white buttons btn-block text-start rounded-3 text-white uniFont"
+                                                        data-target="myCollege4">College Information</button>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <p style="font-size: small;" class="fw-bold">Application</p>
+                                                <hr class="border border-1 border-info opacity-100">
+                                                <div class="d-md-flex flex-column">
+                                                    <button class="d-block btn btn-light mb-1 text-start fw-bold text-secondary" type="button"
+                                                        style="font-family: 'Times New Roman', Times, serif;">Questions</button>
+                                                    <button class="d-block btn btn-light mb-1 text-start fw-bold text-secondary" type="button"
+                                                        style="font-family: 'Times New Roman', Times, serif;">Recommenders</button>
+                                                    <button class="d-block btn btn-light text-start fw-bold text-secondary" type="button"
+                                                        style="font-family: 'Times New Roman', Times, serif;">Submit</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card" id="Uni5">
+                                        <button data-bs-toggle="collapse" data-bs-target="#college5"
+                                            class="btn btn-info btn-block btn-lg text-start rounded-0 uniFont">Moryan University</button>
+                                        <div id="college5" class="collapse fade" data-bs-parent="accordian">
+                                            <div class="card-header">
+                                                <div class="card-title ">
+                                                    <button type="button"
+                                                        class="btn btn-info border border-1 border-white buttons btn-block text-start rounded-3 text-white uniFont"
+                                                        data-target="myCollege5">College Information</button>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <p style="font-size: small;" class="fw-bold">Application</p>
+                                                <hr class="border border-1 border-info opacity-100">
+                                                <div class="d-md-flex flex-column">
+                                                    <button class="d-block btn btn-light mb-1 text-start fw-bold text-secondary" type="button"
+                                                        style="font-family: 'Times New Roman', Times, serif;">Questions</button>
+                                                    <button class="d-block btn btn-light mb-1 text-start fw-bold text-secondary" type="button"
+                                                        style="font-family: 'Times New Roman', Times, serif;">Recommenders</button>
+                                                    <button class="d-block btn btn-light text-start fw-bold text-secondary" type="button"
+                                                        style="font-family: 'Times New Roman', Times, serif;">Submit</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card" id="Uni6">
+                                        <button data-bs-toggle="collapse" data-bs-target="#college6"
+                                            class="btn btn-info btn-block btn-lg text-start rounded-0 uniFont ">Kathryan College</button>
+                                        <div id="college6" class="collapse fade" data-bs-parent="accordian">
+                                            <div class="card-header">
+                                                <div class="card-title ">
+                                                    <button type="button"
+                                                        class="btn btn-info border border-1 border-white buttons btn-block text-start rounded-3 text-white uniFont"
+                                                        data-target="myCollege6">College Information</button>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <p style="font-size: small;" class="fw-bold">Application</p>
+                                                <hr class="border border-1 border-info opacity-100">
+                                                <div class="d-md-flex flex-column">
+                                                    <button class="d-block btn btn-light mb-1 text-start fw-bold text-secondary" type="button"
+                                                        style="font-family: 'Times New Roman', Times, serif;">Questions</button>
+                                                    <button class="d-block btn btn-light mb-1 text-start fw-bold text-secondary" type="button"
+                                                        style="font-family: 'Times New Roman', Times, serif;">Recommenders</button>
+                                                    <button class="d-block btn btn-light text-start fw-bold text-secondary" type="button"
+                                                        style="font-family: 'Times New Roman', Times, serif;">Submit</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -97,11 +237,42 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-sm colleges" id="myCollege1">
+                        <div class="d-sm-flex flex-column border border-info mt-1 border-5 px-2">
+                            <p>College1</p>
+                        </div>
+                    </div>
+                    <div class="col-sm colleges" id="myCollege2">
+                        <div class="d-sm-flex flex-column border border-info mt-1 border-5 px-2">
+                            <p>College2</p>
+                        </div>
+                    </div>
+                    <div class="col-sm colleges" id="myCollege3">
+                        <div class="d-sm-flex flex-column border border-info mt-1 border-5 px-2">
+                            <p>College3</p>
+                        </div>
+                    </div>
+                    <div class="col-sm colleges" id="myCollege4">
+                        <div class="d-sm-flex flex-column border border-info mt-1 border-5 px-2">
+                            <p>College4</p>
+                        </div>
+                    </div>
+                    <div class="col-sm colleges" id="myCollege5">
+                        <div class="d-sm-flex flex-column border border-info mt-1 border-5 px-2">
+                            <p>College5</p>
+                        </div>
+                    </div>
+                    <div class="col-sm colleges" id="myCollege6">
+                        <div class="d-sm-flex flex-column border border-info mt-1 border-5 px-2">
+                            <p>College6</p>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
     </div>
     </div>
 </body>
-
+<script src="E:\WEB DEVELOPMENT\Khazarstan Scholarship\javascript\MyCollege.js"></script>
 </html>
