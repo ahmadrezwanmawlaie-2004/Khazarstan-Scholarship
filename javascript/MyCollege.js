@@ -5,7 +5,7 @@ buttons.forEach(button => {
     button.addEventListener("click", () => {
         const targetId = button.getAttribute("data-target");
         detailCollege.forEach(detail => {
-            detail.style.display = "none";
+            detail.style.display="none";
         });
         document.getElementById("myCollege").style.display = "none";
         const targetDetail = document.getElementById(targetId);
