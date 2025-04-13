@@ -44,13 +44,27 @@ buttons.forEach(button => {
 const csButtonAdd = document.querySelectorAll(".buttonCSadd");
 const collegesDetails = document.getElementById("NewCollege");
 
+let addedColleges = new Set();
+addedColleges.add("Kabul University");
+addedColleges.add("Khazar University");
+addedColleges.add("Brayan College");
+addedColleges.add("Bayat College");
+addedColleges.add("Moryan Univerrsity");
+addedColleges.add("Kathryan College");
+
 let csAdd = () => {
     csButtonAdd.forEach(button => {
         button.addEventListener("click", () => {
+
+            const csName = document.getElementById("csName6").textContent.trim();
+            if (addedColleges.has(csName)){
+                alert(`${document.getElementById("csName6").innerHTML} is already added to Dashboard`);
+                return;
+            }
+            addedColleges.add(csName)
             // Now I show create a row
             const newRow = document.createElement("div");
-            newRow.className = "row rounded-2 shadow-lg mx-1 mb-2";
-
+            newRow.className = "row rounded-2 shadow-lg mx-1 mb-2 uniSearch";
             // Now I should create a new div inside this row
             const ndivInNewRow = document.createElement("div");
             ndivInNewRow.className = "d-flex p-3 justify-content-between gap-2";
@@ -135,13 +149,21 @@ let csAdd = () => {
     });
 };
 
-
 // for the second college
 const csButtonAdd1 = document.querySelectorAll(".buttonCSadd1");
 let csAdd1 = () => {
     csButtonAdd1.forEach(button => {
         button.addEventListener("click", () => {
             // Now I show create a row
+
+            const csName = document.getElementById("csName5").textContent.trim();
+            if (addedColleges.has(csName)) {
+                alert(`${document.getElementById("csName5").innerHTML} is already added`);
+                return;
+            }
+
+            addedColleges.add(csName);
+
             const newRow = document.createElement("div");
             newRow.className = "row rounded-2 shadow-lg mx-1 mb-2";
 
@@ -234,6 +256,13 @@ const csButtonAdd2 = document.querySelectorAll(".buttonCSadd2")
 let csAdd2 = () => {
     csButtonAdd2.forEach(button => {
         button.addEventListener("click", () => {
+
+            const csName = document.getElementById("csName4").textContent.trim();
+            if (addedColleges.has(csName)) {
+                alert(`${document.getElementById("csName4").innerHTML} is already added!`);
+                return;
+            }
+            addedColleges.add(csName);
             // Now I show create a row
             const newRow = document.createElement("div");
             newRow.className = "row rounded-2 shadow-lg mx-1 mb-2";
@@ -327,6 +356,12 @@ const csButtonAdd3 = document.querySelectorAll(".buttonCSadd3");
 let csAdd3 = () => {
     csButtonAdd3.forEach(button => {
         button.addEventListener("click", () => {
+            const csName = document.getElementById("csName3").textContent.trim();
+            if (addedColleges.has(csName)) {
+                alert(`${document.getElementById("csName3").innerHTML} is already added`);
+                return;
+            }
+            addedColleges.add(csName);
             // Now I show create a row
             const newRow = document.createElement("div");
             newRow.className = "row rounded-2 shadow-lg mx-1 mb-2";
@@ -420,6 +455,12 @@ const csButtonAdd4 = document.querySelectorAll(".buttonCsadd4");
 let csAdd4 = () => {
     csButtonAdd4.forEach(button => {
         button.addEventListener("click", () => {
+            const csName = document.getElementById("csName2").textContent.trim();
+            if (addedColleges.has(csName)) {
+                alert(`${document.getElementById("csName2").innerHTML} is already added`);
+                return;
+            }
+            addedColleges.add(csName);
             // Now I show create a row
             const newRow = document.createElement("div");
             newRow.className = "row rounded-2 shadow-lg mx-1 mb-2";
@@ -512,6 +553,14 @@ const csButtonAdd5 = document.querySelectorAll(".buttonCsadd5");
 let csAdd5 = () => {
     csButtonAdd5.forEach(button => {
         button.addEventListener("click", () => {
+
+            const csName = document.getElementById("csName1").textContent.trim();
+            if (addedColleges.has(csName)) {
+                alert(`${document.getElementById("csName1").innerHTML} is already added!`)
+                return;
+            }
+            addedColleges.add(csName);
+
             // Now I show create a row
             const newRow = document.createElement("div");
             newRow.className = "row rounded-2 shadow-lg mx-1 mb-2";
@@ -595,7 +644,7 @@ let csAdd5 = () => {
 
             collegesDetails.appendChild(newRow);
             saveData();
-            alert("Polytechnic University University is added to Dashboard");
+            alert("Polytechnic University is added to Dashboard");
         });
     });
 };
@@ -618,6 +667,50 @@ document.addEventListener("DOMContentLoaded", () => {
 
     csAdd4();
 
+
     csAdd5();
     dispalyData();
 });
+
+// Dashboard Searchbar functions
+const searchButton = document.getElementById("searchBarButton");
+const searchBarInput = document.getElementById("searchBar");
+const mock1 = document.querySelectorAll(".uniSearch");
+let search = () => {
+    searchButton.addEventListener("click", () => {
+        if (addedColleges.has(searchBarInput.value)) {
+            if (searchBarInput.value == "Kabul University") {
+                mock1.forEach(mock => {
+                    mock.style.display = "none";
+                });
+                document.getElementById("FirstUniversity").style.display = "block";
+            } else if(searchBarInput.value == "Khazar University") {
+                mock1.forEach(mock => {
+                    mock.style.display = "none";
+                });
+                document.getElementById("SecondUniversity").style.display = "block";
+            } else if(searchBarInput.value == "Brayan College") {
+                mock1.forEach(mock => {
+                    mock.style.display = "none";
+                });
+                document.getElementById("ThirdUniversity").style.display = "block";
+            } else if(searchBarInput.value == "Bayat College") {
+                mock1.forEach(mock => {
+                    mock.style.display = "none";
+                });
+                document.getElementById("FourthUniversity").style.display = "block";
+            } else if(searchBarInput.value == "Moryan University") {
+                mock1.forEach(mock => {
+                    mock.style.display = "none";
+                });
+                document.getElementById("FifthUniversity").style.display = "block";
+            } else if(searchBarInput.value == "Kathryan College") {
+                mock1.forEach(mock => {
+                    mock.style.display = "none";
+                });
+                document.getElementById("SixthUniversity").style.display = "block";
+            };
+        };
+    });
+};
+search();
