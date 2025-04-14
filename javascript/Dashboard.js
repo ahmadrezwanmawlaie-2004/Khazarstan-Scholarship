@@ -64,7 +64,9 @@ let csAdd = () => {
             addedColleges.add(csName)
             // Now I show create a row
             const newRow = document.createElement("div");
-            newRow.className = "row rounded-2 shadow-lg mx-1 mb-2 uniSearch";
+            newRow.className = "uniSearch";
+            newRow.className = "row rounded-2 shadow-lg mx-1 mb-2";
+            newRow.id = "TwelveUniversity";
             // Now I should create a new div inside this row
             const ndivInNewRow = document.createElement("div");
             ndivInNewRow.className = "d-flex p-3 justify-content-between gap-2";
@@ -165,7 +167,8 @@ let csAdd1 = () => {
             addedColleges.add(csName);
 
             const newRow = document.createElement("div");
-            newRow.className = "row rounded-2 shadow-lg mx-1 mb-2";
+            newRow.className = "row rounded-2 shadow-lg mx-1 mb-2 uniSearch";
+            newRow.id = "ElventhUniversity";
 
             // Now I should create a new div inside this row
             const ndivInNewRow = document.createElement("div");
@@ -265,7 +268,8 @@ let csAdd2 = () => {
             addedColleges.add(csName);
             // Now I show create a row
             const newRow = document.createElement("div");
-            newRow.className = "row rounded-2 shadow-lg mx-1 mb-2";
+            newRow.className = "row rounded-2 shadow-lg mx-1 mb-2 uniSearch";
+            newRow.id = "TenthUniversity";
 
             // Now I should create a new div inside this row
             const ndivInNewRow = document.createElement("div");
@@ -364,7 +368,8 @@ let csAdd3 = () => {
             addedColleges.add(csName);
             // Now I show create a row
             const newRow = document.createElement("div");
-            newRow.className = "row rounded-2 shadow-lg mx-1 mb-2";
+            newRow.className = "row rounded-2 shadow-lg mx-1 mb-2 uniSearch";
+            newRow.id = "NinethUniversity";
 
             // Now I should create a new div inside this row
             const ndivInNewRow = document.createElement("div");
@@ -463,8 +468,8 @@ let csAdd4 = () => {
             addedColleges.add(csName);
             // Now I show create a row
             const newRow = document.createElement("div");
-            newRow.className = "row rounded-2 shadow-lg mx-1 mb-2";
-
+            newRow.className = "row rounded-2 shadow-lg mx-1 mb-2 uniSearch";
+            newRow.id = "EigthUniversity";
             // Now I should create a new div inside this row
             const ndivInNewRow = document.createElement("div");
             ndivInNewRow.className = "d-flex p-3 justify-content-between gap-2";
@@ -563,7 +568,8 @@ let csAdd5 = () => {
 
             // Now I show create a row
             const newRow = document.createElement("div");
-            newRow.className = "row rounded-2 shadow-lg mx-1 mb-2";
+            newRow.className = "row rounded-2 shadow-lg mx-1 mb-2 uniSearch";
+            newRow.id = "SeventhUniversity";
 
             // Now I should create a new div inside this row
             const ndivInNewRow = document.createElement("div");
@@ -683,6 +689,7 @@ let search = () => {
                 mock1.forEach(mock => {
                     mock.style.display = "none";
                 });
+                document.getElementById("TwelveUniversity").style.display = "none";
                 document.getElementById("FirstUniversity").style.display = "block";
             } else if(searchBarInput.value == "Khazar University") {
                 mock1.forEach(mock => {
@@ -709,6 +716,36 @@ let search = () => {
                     mock.style.display = "none";
                 });
                 document.getElementById("SixthUniversity").style.display = "block";
+            } else if (searchBarInput.value == "Polytechnic University") {
+                mock1.forEach(mock => {
+                    mock.style.display = "none";
+                });
+                document.getElementById("SeventhUniversity").style.display = "block";
+            } else if (searchBarInput.value == "Panama College") {
+                mock1.forEach(mock => {
+                    mock.style.display = "none";
+                });
+                document.getElementById("EigthUniversity").style.display = "block";
+            } else if (searchBarInput.value == "Somara College") {
+                mock1.forEach(mock => {
+                    mock.style.display = "none";
+                });
+                document.getElementById("NinethUniversity").style.display = "block";
+            } else if (searchBarInput.value == "Ghazni Universtiy") {
+                mock1.forEach(mock => {
+                    mock.style.display = "none";
+                });
+                document.getElementById("TenthUniversity").style.display = "block";
+            } else if (searchBarInput.value == "Balkh Universtiy") {
+                mock1.forEach(mock => {
+                    mock.style.display = "none";
+                });
+                document.getElementById("ElventhUniversity").style.display = "block";
+            } else if (searchBarInput.value == "Herat College") {
+                mock1.forEach(mock => {
+                    mock.style.display = "none";
+                });
+                document.getElementById("TwelveUniversity").style.display = "block";
             };
         };
     });
