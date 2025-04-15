@@ -40,7 +40,7 @@ let csAdd = () => {
             // Now I show create a row
             const newRow = document.createElement("div");
             newRow.className = "uniSearch";
-            newRow.className = "row rounded-2 shadow-lg mx-1 mb-2";
+            newRow.className = "row rounded-2 shadow-lg mx-1 mb-2 colleges";
             newRow.id = "TwelveUniversity";
             // Now I should create a new div inside this row
             const ndivInNewRow = document.createElement("div");
@@ -85,7 +85,7 @@ let csAdd = () => {
             imgs.width = "170";
             // The content inisde the collegeName which is only the name of the college
             const collegeName = document.createElement("h4");
-            collegeName.className = "fw-bold";
+            collegeName.className = "fw-bold college-name";
             collegeName.style.fontFamily = "Arial, Helvetica, sans-serif";
             const csNames = document.getElementById("csName6").textContent;
             collegeName.textContent = csNames;
@@ -142,7 +142,7 @@ let csAdd1 = () => {
             addedColleges.add(csName);
 
             const newRow = document.createElement("div");
-            newRow.className = "row rounded-2 shadow-lg mx-1 mb-2 uniSearch";
+            newRow.className = "row rounded-2 shadow-lg mx-1 mb-2 uniSearch colleges";
             newRow.id = "ElventhUniversity";
 
             // Now I should create a new div inside this row
@@ -188,7 +188,7 @@ let csAdd1 = () => {
             imgs.width = "170";
             // The content inisde the collegeName which is only the name of the college
             const collegeName = document.createElement("h4");
-            collegeName.className = "fw-bold";
+            collegeName.className = "fw-bold college-name";
             collegeName.style.fontFamily = "Arial, Helvetica, sans-serif";
             const csNames = document.getElementById("csName5").textContent;
             collegeName.textContent = csNames;
@@ -243,7 +243,7 @@ let csAdd2 = () => {
             addedColleges.add(csName);
             // Now I show create a row
             const newRow = document.createElement("div");
-            newRow.className = "row rounded-2 shadow-lg mx-1 mb-2 uniSearch";
+            newRow.className = "row rounded-2 shadow-lg mx-1 mb-2 uniSearch colleges";
             newRow.id = "TenthUniversity";
 
             // Now I should create a new div inside this row
@@ -289,7 +289,7 @@ let csAdd2 = () => {
             imgs.width = "170";
             // The content inisde the collegeName which is only the name of the college
             const collegeName = document.createElement("h4");
-            collegeName.className = "fw-bold";
+            collegeName.className = "fw-bold college-name";
             collegeName.style.fontFamily = "Arial, Helvetica, sans-serif";
             const csNames = document.getElementById("csName4").textContent;
             collegeName.textContent = csNames;
@@ -343,7 +343,7 @@ let csAdd3 = () => {
             addedColleges.add(csName);
             // Now I show create a row
             const newRow = document.createElement("div");
-            newRow.className = "row rounded-2 shadow-lg mx-1 mb-2 uniSearch";
+            newRow.className = "row rounded-2 shadow-lg mx-1 mb-2 uniSearch colleges";
             newRow.id = "NinethUniversity";
 
             // Now I should create a new div inside this row
@@ -389,7 +389,7 @@ let csAdd3 = () => {
             imgs.width = "170";
             // The content inisde the collegeName which is only the name of the college
             const collegeName = document.createElement("h4");
-            collegeName.className = "fw-bold";
+            collegeName.className = "fw-bold college-name";
             collegeName.style.fontFamily = "Arial, Helvetica, sans-serif";
             const csNames = document.getElementById("csName3").textContent;
             collegeName.textContent = csNames;
@@ -447,7 +447,7 @@ let csAdd4 = () => {
             newRow.id = "EigthUniversity";
             // Now I should create a new div inside this row
             const ndivInNewRow = document.createElement("div");
-            ndivInNewRow.className = "d-flex p-3 justify-content-between gap-2";
+            ndivInNewRow.className = "d-flex p-3 justify-content-between gap-2 colleges";
 
             newRow.appendChild(ndivInNewRow);
 
@@ -487,7 +487,7 @@ let csAdd4 = () => {
             imgs.width = "170";
             // The content inisde the collegeName which is only the name of the college
             const collegeName = document.createElement("h4");
-            collegeName.className = "fw-bold";
+            collegeName.className = "fw-bold college-name";
             collegeName.style.fontFamily = "Arial, Helvetica, sans-serif";
             const csNames = document.getElementById("csName2").textContent;
             collegeName.textContent = csNames;
@@ -543,7 +543,7 @@ let csAdd5 = () => {
 
             // Now I show create a row
             const newRow = document.createElement("div");
-            newRow.className = "row rounded-2 shadow-lg mx-1 mb-2 uniSearch";
+            newRow.className = "row rounded-2 shadow-lg mx-1 mb-2 uniSearch colleges";
             newRow.id = "SeventhUniversity";
 
             // Now I should create a new div inside this row
@@ -589,7 +589,7 @@ let csAdd5 = () => {
             imgs.width = "170";
             // The content inisde the collegeName which is only the name of the college
             const collegeName = document.createElement("h4");
-            collegeName.className = "fw-bold";
+            collegeName.className = "fw-bold college-name";
             collegeName.style.fontFamily = "Arial, Helvetica, sans-serif";
             const csNames = document.getElementById("csName1").textContent;
             collegeName.textContent = csNames;
@@ -637,114 +637,6 @@ function dispalyData() {
     collegesDetails.innerHTML = localStorage.getItem("data");
 }
 
-// Dashboard Searchbar functions
-const searchButton = document.getElementById("searchBarButton");
-const searchBarInput = document.getElementById("searchBar");
-const mock1 = document.querySelectorAll(".uniSearch");
-// let search = () => {
-//     searchButton.addEventListener("click", () => {
-//         if (addedColleges.has(searchBarInput.value)) {
-//             if (searchBarInput.value == "Kabul University") {
-//                 mock1.forEach(mock => {
-//                     mock.style.display = "none";
-//                 });
-//                 document.getElementById("TwelveUniversity").style.display = "none";
-//                 document.getElementById("ElventhUniversity").style.display = "none";
-//                 document.getElementById("TenthUniversity").style.display = "none";
-//                 document.getElementById("NinethUniversity").style.display = "none";
-//                 document.getElementById("EigthUniversity").style.display = "none";
-//                 document.getElementById("SeventhUniversity").style.display = "none";
-//                 document.getElementById("FirstUniversity").style.display = "block";
-//             } else if(searchBarInput.value == "Khazar University") {
-//                 mock1.forEach(mock => {
-//                     mock.style.display = "none";
-//                 });
-//                 document.getElementById("TwelveUniversity").style.display = "none";
-//                 document.getElementById("ElventhUniversity").style.display = "none";
-//                 document.getElementById("TenthUniversity").style.display = "none";
-//                 document.getElementById("NinethUniversity").style.display = "none";
-//                 document.getElementById("EigthUniversity").style.display = "none";
-//                 document.getElementById("SeventhUniversity").style.display = "none";
-//                 document.getElementById("SecondUniversity").style.display = "block";
-//             } else if(searchBarInput.value == "Brayan College") {
-//                 mock1.forEach(mock => {
-//                     mock.style.display = "none";
-//                 });
-//                 document.getElementById("TwelveUniversity").style.display = "none";
-//                 document.getElementById("ElventhUniversity").style.display = "none";
-//                 document.getElementById("TenthUniversity").style.display = "none";
-//                 document.getElementById("NinethUniversity").style.display = "none";
-//                 document.getElementById("EigthUniversity").style.display = "none";
-//                 document.getElementById("SeventhUniversity").style.display = "none";
-//                 document.getElementById("ThirdUniversity").style.display = "block";
-//             } else if(searchBarInput.value == "Bayat College") {
-//                 mock1.forEach(mock => {
-//                     mock.style.display = "none";
-//                 });
-//                 document.getElementById("TwelveUniversity").style.display = "none";
-//                 document.getElementById("ElventhUniversity").style.display = "none";
-//                 document.getElementById("TenthUniversity").style.display = "none";
-//                 document.getElementById("NinethUniversity").style.display = "none";
-//                 document.getElementById("EigthUniversity").style.display = "none";
-//                 document.getElementById("SeventhUniversity").style.display = "none";
-//                 document.getElementById("FourthUniversity").style.display = "block";
-//             } else if(searchBarInput.value == "Moryan University") {
-//                 mock1.forEach(mock => {
-//                     mock.style.display = "none";
-//                 });
-//                 document.getElementById("TwelveUniversity").style.display = "none";
-//                 document.getElementById("ElventhUniversity").style.display = "none";
-//                 document.getElementById("TenthUniversity").style.display = "none";
-//                 document.getElementById("NinethUniversity").style.display = "none";
-//                 document.getElementById("EigthUniversity").style.display = "none";
-//                 document.getElementById("SeventhUniversity").style.display = "none";
-//                 document.getElementById("FifthUniversity").style.display = "block";
-//             } else if(searchBarInput.value == "Kathryan College") {
-//                 mock1.forEach(mock => {
-//                     mock.style.display = "none";
-//                 });
-//                 document.getElementById("TwelveUniversity").style.display = "none";
-//                 document.getElementById("ElventhUniversity").style.display = "none";
-//                 document.getElementById("TenthUniversity").style.display = "none";
-//                 document.getElementById("NinethUniversity").style.display = "none";
-//                 document.getElementById("EigthUniversity").style.display = "none";
-//                 document.getElementById("SeventhUniversity").style.display = "none";
-//                 document.getElementById("SixthUniversity").style.display = "block";
-//             } else if (searchBarInput.value == "Polytechnic University") {
-//                 mock1.forEach(mock => {
-//                     mock.style.display = "none";
-//                 });
-//                 document.getElementById("SeventhUniversity").style.display = "block";
-//             } else if (searchBarInput.value == "Panama College") {
-//                 mock1.forEach(mock => {
-//                     mock.style.display = "none";
-//                 });
-//                 document.getElementById("EigthUniversity").style.display = "block";
-//             } else if (searchBarInput.value == "Somara College") {
-//                 mock1.forEach(mock => {
-//                     mock.style.display = "none";
-//                 });
-//                 document.getElementById("NinethUniversity").style.display = "block";
-//             } else if (searchBarInput.value == "Ghazni Universtiy") {
-//                 mock1.forEach(mock => {
-//                     mock.style.display = "none";
-//                 });
-//                 document.getElementById("TenthUniversity").style.display = "block";
-//             } else if (searchBarInput.value == "Balkh Universtiy") {
-//                 mock1.forEach(mock => {
-//                     mock.style.display = "none";
-//                 });
-//                 document.getElementById("ElventhUniversity").style.display = "block";
-//             } else if (searchBarInput.value == "Herat College") {
-//                 mock1.forEach(mock => {
-//                     mock.style.display = "none";
-//                 });
-//                 document.getElementById("TwelveUniversity").style.display = "block";
-//             };
-//             saveData();
-//         };
-//     });
-// };
 document.addEventListener("DOMContentLoaded", () => {
     csAdd();
 
