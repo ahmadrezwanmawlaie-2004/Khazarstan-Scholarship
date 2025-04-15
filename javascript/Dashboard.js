@@ -1,28 +1,3 @@
-let universityFirstHidden = () => {
-    let toggle = document.getElementById("FirstUniversity");
-    toggle.toggleAttribute("hidden");
-}
-let universitySecondHidden = () => {
-    let toggle = document.getElementById("SecondUniversity");
-    toggle.toggleAttribute("hidden");
-}
-let universityThirdHidden = () => {
-    let toggle = document.getElementById("ThirdUniversity");
-    toggle.toggleAttribute("hidden");
-}
-let universityFourthHidden = () => {
-    let toggle = document.getElementById("FourthUniversity");
-    toggle.toggleAttribute("hidden");
-}
-let universityFifthHidden = () => {
-    let toggle = document.getElementById("FifthUniversity");
-    toggle.toggleAttribute("hidden");
-}
-let universitySixthHidden = () => {
-    let toggle = document.getElementById("SixthUniversity");
-    toggle.toggleAttribute("hidden");
-}
-
 const buttons = document.querySelectorAll(".navButtons");
 const content = document.querySelectorAll(".universityP");
 
@@ -662,6 +637,114 @@ function dispalyData() {
     collegesDetails.innerHTML = localStorage.getItem("data");
 }
 
+// Dashboard Searchbar functions
+const searchButton = document.getElementById("searchBarButton");
+const searchBarInput = document.getElementById("searchBar");
+const mock1 = document.querySelectorAll(".uniSearch");
+// let search = () => {
+//     searchButton.addEventListener("click", () => {
+//         if (addedColleges.has(searchBarInput.value)) {
+//             if (searchBarInput.value == "Kabul University") {
+//                 mock1.forEach(mock => {
+//                     mock.style.display = "none";
+//                 });
+//                 document.getElementById("TwelveUniversity").style.display = "none";
+//                 document.getElementById("ElventhUniversity").style.display = "none";
+//                 document.getElementById("TenthUniversity").style.display = "none";
+//                 document.getElementById("NinethUniversity").style.display = "none";
+//                 document.getElementById("EigthUniversity").style.display = "none";
+//                 document.getElementById("SeventhUniversity").style.display = "none";
+//                 document.getElementById("FirstUniversity").style.display = "block";
+//             } else if(searchBarInput.value == "Khazar University") {
+//                 mock1.forEach(mock => {
+//                     mock.style.display = "none";
+//                 });
+//                 document.getElementById("TwelveUniversity").style.display = "none";
+//                 document.getElementById("ElventhUniversity").style.display = "none";
+//                 document.getElementById("TenthUniversity").style.display = "none";
+//                 document.getElementById("NinethUniversity").style.display = "none";
+//                 document.getElementById("EigthUniversity").style.display = "none";
+//                 document.getElementById("SeventhUniversity").style.display = "none";
+//                 document.getElementById("SecondUniversity").style.display = "block";
+//             } else if(searchBarInput.value == "Brayan College") {
+//                 mock1.forEach(mock => {
+//                     mock.style.display = "none";
+//                 });
+//                 document.getElementById("TwelveUniversity").style.display = "none";
+//                 document.getElementById("ElventhUniversity").style.display = "none";
+//                 document.getElementById("TenthUniversity").style.display = "none";
+//                 document.getElementById("NinethUniversity").style.display = "none";
+//                 document.getElementById("EigthUniversity").style.display = "none";
+//                 document.getElementById("SeventhUniversity").style.display = "none";
+//                 document.getElementById("ThirdUniversity").style.display = "block";
+//             } else if(searchBarInput.value == "Bayat College") {
+//                 mock1.forEach(mock => {
+//                     mock.style.display = "none";
+//                 });
+//                 document.getElementById("TwelveUniversity").style.display = "none";
+//                 document.getElementById("ElventhUniversity").style.display = "none";
+//                 document.getElementById("TenthUniversity").style.display = "none";
+//                 document.getElementById("NinethUniversity").style.display = "none";
+//                 document.getElementById("EigthUniversity").style.display = "none";
+//                 document.getElementById("SeventhUniversity").style.display = "none";
+//                 document.getElementById("FourthUniversity").style.display = "block";
+//             } else if(searchBarInput.value == "Moryan University") {
+//                 mock1.forEach(mock => {
+//                     mock.style.display = "none";
+//                 });
+//                 document.getElementById("TwelveUniversity").style.display = "none";
+//                 document.getElementById("ElventhUniversity").style.display = "none";
+//                 document.getElementById("TenthUniversity").style.display = "none";
+//                 document.getElementById("NinethUniversity").style.display = "none";
+//                 document.getElementById("EigthUniversity").style.display = "none";
+//                 document.getElementById("SeventhUniversity").style.display = "none";
+//                 document.getElementById("FifthUniversity").style.display = "block";
+//             } else if(searchBarInput.value == "Kathryan College") {
+//                 mock1.forEach(mock => {
+//                     mock.style.display = "none";
+//                 });
+//                 document.getElementById("TwelveUniversity").style.display = "none";
+//                 document.getElementById("ElventhUniversity").style.display = "none";
+//                 document.getElementById("TenthUniversity").style.display = "none";
+//                 document.getElementById("NinethUniversity").style.display = "none";
+//                 document.getElementById("EigthUniversity").style.display = "none";
+//                 document.getElementById("SeventhUniversity").style.display = "none";
+//                 document.getElementById("SixthUniversity").style.display = "block";
+//             } else if (searchBarInput.value == "Polytechnic University") {
+//                 mock1.forEach(mock => {
+//                     mock.style.display = "none";
+//                 });
+//                 document.getElementById("SeventhUniversity").style.display = "block";
+//             } else if (searchBarInput.value == "Panama College") {
+//                 mock1.forEach(mock => {
+//                     mock.style.display = "none";
+//                 });
+//                 document.getElementById("EigthUniversity").style.display = "block";
+//             } else if (searchBarInput.value == "Somara College") {
+//                 mock1.forEach(mock => {
+//                     mock.style.display = "none";
+//                 });
+//                 document.getElementById("NinethUniversity").style.display = "block";
+//             } else if (searchBarInput.value == "Ghazni Universtiy") {
+//                 mock1.forEach(mock => {
+//                     mock.style.display = "none";
+//                 });
+//                 document.getElementById("TenthUniversity").style.display = "block";
+//             } else if (searchBarInput.value == "Balkh Universtiy") {
+//                 mock1.forEach(mock => {
+//                     mock.style.display = "none";
+//                 });
+//                 document.getElementById("ElventhUniversity").style.display = "block";
+//             } else if (searchBarInput.value == "Herat College") {
+//                 mock1.forEach(mock => {
+//                     mock.style.display = "none";
+//                 });
+//                 document.getElementById("TwelveUniversity").style.display = "block";
+//             };
+//             saveData();
+//         };
+//     });
+// };
 document.addEventListener("DOMContentLoaded", () => {
     csAdd();
 
@@ -673,81 +756,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     csAdd4();
 
-
     csAdd5();
     dispalyData();
 });
-
-// Dashboard Searchbar functions
-const searchButton = document.getElementById("searchBarButton");
-const searchBarInput = document.getElementById("searchBar");
-const mock1 = document.querySelectorAll(".uniSearch");
-let search = () => {
-    searchButton.addEventListener("click", () => {
-        if (addedColleges.has(searchBarInput.value)) {
-            if (searchBarInput.value == "Kabul University") {
-                mock1.forEach(mock => {
-                    mock.style.display = "none";
-                });
-                document.getElementById("TwelveUniversity").style.display = "none";
-                document.getElementById("FirstUniversity").style.display = "block";
-            } else if(searchBarInput.value == "Khazar University") {
-                mock1.forEach(mock => {
-                    mock.style.display = "none";
-                });
-                document.getElementById("SecondUniversity").style.display = "block";
-            } else if(searchBarInput.value == "Brayan College") {
-                mock1.forEach(mock => {
-                    mock.style.display = "none";
-                });
-                document.getElementById("ThirdUniversity").style.display = "block";
-            } else if(searchBarInput.value == "Bayat College") {
-                mock1.forEach(mock => {
-                    mock.style.display = "none";
-                });
-                document.getElementById("FourthUniversity").style.display = "block";
-            } else if(searchBarInput.value == "Moryan University") {
-                mock1.forEach(mock => {
-                    mock.style.display = "none";
-                });
-                document.getElementById("FifthUniversity").style.display = "block";
-            } else if(searchBarInput.value == "Kathryan College") {
-                mock1.forEach(mock => {
-                    mock.style.display = "none";
-                });
-                document.getElementById("SixthUniversity").style.display = "block";
-            } else if (searchBarInput.value == "Polytechnic University") {
-                mock1.forEach(mock => {
-                    mock.style.display = "none";
-                });
-                document.getElementById("SeventhUniversity").style.display = "block";
-            } else if (searchBarInput.value == "Panama College") {
-                mock1.forEach(mock => {
-                    mock.style.display = "none";
-                });
-                document.getElementById("EigthUniversity").style.display = "block";
-            } else if (searchBarInput.value == "Somara College") {
-                mock1.forEach(mock => {
-                    mock.style.display = "none";
-                });
-                document.getElementById("NinethUniversity").style.display = "block";
-            } else if (searchBarInput.value == "Ghazni Universtiy") {
-                mock1.forEach(mock => {
-                    mock.style.display = "none";
-                });
-                document.getElementById("TenthUniversity").style.display = "block";
-            } else if (searchBarInput.value == "Balkh Universtiy") {
-                mock1.forEach(mock => {
-                    mock.style.display = "none";
-                });
-                document.getElementById("ElventhUniversity").style.display = "block";
-            } else if (searchBarInput.value == "Herat College") {
-                mock1.forEach(mock => {
-                    mock.style.display = "none";
-                });
-                document.getElementById("TwelveUniversity").style.display = "block";
-            };
-        };
-    });
-};
-search();
