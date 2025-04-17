@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Khazar App</title>
     <link rel="icon" href="E:\WEB DEVELOPMENT\Khazarstan Scholarship\images\LinkLogo2.jpg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="E:\WEB DEVELOPMENT\Khazarstan Scholarship\css\Dashboard.css">
     <script defer src="./javascript/removeCollegeModule.js"></script>
     <script defer src="./javascript/SearchingModule.js"></script>
+    <script defer src="./javascript/CollegeAdd.js"></script>
+    <script defer src="./javascript/dashcollege.js"></script>
 </head>
 <body style="background-color:#E6E6FA;">
     <div class="container-fluid">
@@ -42,7 +44,7 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav d-flex justify-content-around w-100 gap-2 mt-2">
                             <li class="nav-item btn btn-info active"><a class="nav-link text-white fw-bold navButtons" data-target="dashboardUniversities">Dashboard</a></li>
-                            <li class="nav-item btn btn-info"><a class="nav-link text-white fw-bold">My Colleges</a></li>
+                            <li class="nav-item btn btn-info"><a class="nav-link text-white fw-bold navButtons" href="MyCollege.html">My Colleges</a></li>
                             <li class="nav-item btn btn-info"><a class="nav-link text-white fw-bold">Khazar App</a></li>
                             <li class="nav-item btn btn-info"><a class="nav-link text-white fw-bold navButtons" data-target="collegeSearchUniversity">College Search</a></li>
                             <li class="nav-item btn btn-info"><a class="nav-link  text-white fw-bold">Financial Aid</a></li>
@@ -243,7 +245,7 @@
                                     <div class="d-flex p-3 justify-content-between gap-2">
                                         <div class="d-flex justify-content-center align-items-center gap-2">
                                             <div>
-                                                <img class="img-fluid rounded-2" height="170" width="170" id="csimg1"
+                                                <img class="img-fluid rounded-2 csImgs" height="170" width="170" id="csimg1"
                                                     src="images\uni11.jpg" class="img-fluid">
                                             </div>
                                             <div>
@@ -261,8 +263,8 @@
                                     <div class="d-flex p-3 justify-content-between gap-2">
                                         <div class="d-flex justify-content-center align-items-center gap-2">
                                             <div>
-                                                <img class="img-fluid rounded-2" height="170" width="170" id="csimg2"
-                                                    src="images\uni12.jpg" class="img-fluid">
+                                                <img class="img-fluid rounded-2 csImgs" height="170" width="170" id="csimg2"
+                                                    src="images\uni12.jpg " class="img-fluid">
                                             </div>
                                             <div>
                                                 <h4 style="font-family: Arial, Helvetica, sans-serif;" class="fw-bold collegeName" id="csName2">Panama College</h4>
@@ -279,7 +281,7 @@
                                     <div class="d-flex p-3 justify-content-between gap-2">
                                         <div class="d-flex justify-content-center align-items-center gap-2">
                                             <div>
-                                                <img class="img-fluid rounded-2" height="170" width="170" id="csimg3"
+                                                <img class="img-fluid rounded-2 csImgs" height="170" width="170" id="csimg3"
                                                     src="images\uni13.jpg" class="img-fluid">
                                             </div>
                                             <div>
@@ -297,7 +299,7 @@
                                     <div class="d-flex p-3 justify-content-between gap-2">
                                         <div class="d-flex justify-content-center align-items-center gap-2">
                                             <div>
-                                                <img class="img-fluid rounded-2" height="170" width="170" id="csimg4"
+                                                <img class="img-fluid rounded-2 csImgs" height="170" width="170" id="csimg4"
                                                     src="images\uni14.jpg" class="img-fluid">
                                             </div>
                                             <div>
@@ -315,7 +317,7 @@
                                     <div class="d-flex p-3 justify-content-between gap-2">
                                         <div class="d-flex justify-content-center align-items-center gap-2">
                                             <div>
-                                                <img class="img-fluid rounded-2" height="170" width="170" id="csimg5"
+                                                <img class="img-fluid rounded-2 csImgs" height="170" width="170" id="csimg5"
                                                     src="images\uni15.jpg" class="img-fluid">
                                             </div>
                                             <div>
@@ -333,7 +335,7 @@
                                     <div class="d-flex p-3 justify-content-between gap-2">
                                         <div class="d-flex justify-content-center align-items-center gap-2">
                                             <div>
-                                                <img class="img-fluid rounded-2" height="170" width="170" id="csimg6"
+                                                <img class="img-fluid rounded-2 csImgs" height="170" width="170" id="csimg6"
                                                     src="images\uni16.jpg"
                                                     class="img-fluid">
                                             </div>
@@ -355,7 +357,6 @@
                 </div>
             </div>
         </div>
-        
     </div>
 </body>
 <script src="E:\WEB DEVELOPMENT\Khazarstan Scholarship\javascript\Dashboard.js"></script>

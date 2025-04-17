@@ -6,7 +6,6 @@ let toggleColleges = () => {
     for (let i = 0; i <= collegebuttons.length - 1; i++) {
         collegebuttons[i].addEventListener("click", () => {
             colleges[i].toggleAttribute("hidden");
-
         });
     };
 };
