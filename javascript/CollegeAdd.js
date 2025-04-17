@@ -27,7 +27,7 @@ let AddingCollege = () => {
             if (true) {
                 addedCollege.add(csNam);
             }
-
+            localStorage.setItem(`${collegeNames[i].innerHTML}`, collegeNames[i].innerHTML );
             // Now I show create a row
             const newRow = document.createElement("div");
             newRow.className = "row rounded-2 shadow-lg mx-1 mb-2 uniSearch colleges";
@@ -116,6 +116,7 @@ let AddingCollege = () => {
         });
     };
 }
+
 function saveAddedColleges() {
     localStorage.setItem("data", collegesDetail.innerHTML);
 }
