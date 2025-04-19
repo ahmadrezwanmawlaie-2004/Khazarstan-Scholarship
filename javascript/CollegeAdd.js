@@ -11,14 +11,17 @@ const collegeNames = document.querySelectorAll(".collegeName");
 const collegesDetail = document.getElementById("NewCollege");
 // The program iterate over the buttons of buttonsCs
 
+let j = 0;
+
 // Now I want to access to the images
 const images = document.querySelectorAll(".csImgs");
 let addedCollege = new Set();
 
 let AddingCollege = () => {
     for (let i = 0; i < addCollegeButtons.length; i++) {
+        
         addCollegeButtons[i].addEventListener("click", () => {
-
+            j++;
             const csNam = collegeNames[i].textContent.trim();
             if (addedCollege.has(csNam)) {
                 alert(`${collegeNames[i].innerHTML} is already added to Dashboard`);
@@ -27,11 +30,11 @@ let AddingCollege = () => {
             if (true) {
                 addedCollege.add(csNam);
             }
-            localStorage.setItem(`${collegeNames[i].innerHTML}`, collegeNames[i].innerHTML );
+            localStorage.setItem(`${i}`, collegeNames[i].innerHTML);
             // Now I show create a row
             const newRow = document.createElement("div");
             newRow.className = "row rounded-2 shadow-lg mx-1 mb-2 uniSearch colleges";
-            newRow.id = "SeventhUniversity";
+            newRow.id = `${i}1111`;
 
             // Now I should create a new div inside this row
             const ndivInNewRow = document.createElement("div");
@@ -103,7 +106,12 @@ let AddingCollege = () => {
             button2.type = "button";
             button2.className = "btn btn-outline-info btn buttons";
             button2.innerText = "Remove";
+            button2.setAttribute("data-id", i);
+            button2.id = `${i}111`;
             button2.onclick = function () {
+                const idToRemove = this.getAttribute("data-id");
+                newRow.remove();
+                localStorage.removeItem(idToRemove); // ❗ removes `${i}` from localStorage
                 newRow.remove();
                 saveAddedColleges();
             };
@@ -115,7 +123,7 @@ let AddingCollege = () => {
             saveAddedColleges();
         });
     };
-}
+};
 
 function saveAddedColleges() {
     localStorage.setItem("data", collegesDetail.innerHTML);
