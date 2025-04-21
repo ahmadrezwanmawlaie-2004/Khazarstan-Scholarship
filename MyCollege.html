@@ -76,15 +76,14 @@
                                         <div id="college1" class="collapse fade" data-bs-parent="accordian">
                                             <div class="card-header">
                                                 <div class="card-title">
-                                                    <button type="button" class="btn btn-info border border-1 border-white buttons btn-block text-start rounded-3 text-white uniFont"
-                                                        data-target="myCollege1">College Information</button>
+                                                    <button data-bs-toggle="modal" data-bs-target="#KabulUniversity" type="button" class="btn btn-info border border-1 border-white  btn-block text-start rounded-3 text-white uniFont">College Information</button>
                                                 </div>
                                             </div>
                                             <div class="card-body">
                                                 <p style="font-size: small;" class="fw-bold">Application</p>
                                                 <hr class="border border-1 border-info opacity-100">
                                                 <div class="d-md-flex flex-column">
-                                                    <button class="d-block btn btn-light mb-1 text-start fw-bold text-secondary" type="button" style="font-family: 'Times New Roman', Times, serif;">Questions</button>
+                                                    <button class="d-block btn btn-light mb-1 text-start fw-bold text-secondary buttons " type="button" style="font-family: 'Times New Roman', Times, serif;" data-target="myCollege1">Questions</button>
                                                     <button class="d-block btn btn-light mb-1 text-start fw-bold text-secondary" type="button" style="font-family: 'Times New Roman', Times, serif;">Recommenders</button>
                                                     <button class="d-block btn btn-light text-start fw-bold text-secondary" type="button" style="font-family: 'Times New Roman', Times, serif;">Submit</button>
                                                 </div>
@@ -271,6 +270,131 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="modal fade bg-dark" id="KabulUniversity" data-bs-theme="dark" >
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header d-flex">
+                    <div class="row">
+                        <div class="col">
+                            <img class="img-fluid rounded-2" height="350" width="500" id="university1" src=".\images\uni.jpg" class="img-fluid">
+                            <h1 class="text-white">Kabul University</h1>
+                        </div>
+                        <div class="col-8">
+                            <div class="d-flex">
+                                <a href="emailto:kabul@uni.com" class="me-2">kabul@uni.com</a>
+                                <p class="text-white-50">Phone<a href="phone:+93786884075">(480) 965-7788</a></p>
+                            </div>
+                            <div>
+                                <p class="text-white">Student Services Building, 1151 S. Forest Ave. Tempe, AZ 85281 USA</p>
+                            </div>
+                            <hr class="border border-1 border-white-50 opacity-100">
+                            <div class="row">
+                                <div class="col-8">
+                                    <div class="d-flex flex-column">
+                                        <h4 class="text-white">Application deadlines</h4>
+                                        <div class="d-flex flex-column mt-2">
+                                            <h6 class="text-white">2025 Fall - (August)</h6>
+                                            <p class="text-white-50">Rolling Admission: July 27, 2025</p>
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                            <h6 class="text-white">2025 Summer - (June)</h6>
+                                            <p class="text-white-50">Rolling Admission · May 15, 2025</p>
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                            <h6 class="text-white">2025 Spring - (January)</h6>
+                                            <p class="text-white-50">Rolling Admission · January 08, 2025</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div>
+                                        <h4 class="text-white">Links</h4>
+                                        <ul>
+                                            <li><a href="#" class="text-info text-decoration-color">College website</a></li>
+                                            <li><a href="#" class="text-info text-decoration-color">Admission office</a></li>
+                                            <li><a href="#" class="text-info text-decoration-color">Financial aid</a></li>
+                                            <li><a href="#" class="text-info text-decoration-color">Virtual tour</a></li>
+                                            <li><a href="#" class="text-info text-decoration-color">College Navigator</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="accordion" id="demo">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#applicationInfo" aria-expanded="true" aria-controls="applicationInfo">Application
+                                                Information</button>
+                                        </h2>
+                                        <div id="applicationInfo" class="accordion-collapse collapse show" data-bs-parent="demo">
+                                            <div class="mt-2">
+                                                <h5>Application Fees:</h5>
+                                                <ul>
+                                                    <li>First Year International Fee - $85</li>
+                                                    <li>First Year Domestic Fee - $80</li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <h5>Standardized test policy:</h5>
+                                                <ul>
+                                                    <li>Flexible</li>
+                                                    <li>See website</li>
+                                                    <li><a href="#">Test Police Information</a></li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <h5>Accepted English proficiency tests:</h5>
+                                                <p><a href="#">See website</a></p>
+                                            </div>
+                                            <div>
+                                                <h5>Courses & Grades:</h5>
+                                                <p>Required</p>
+                                            </div>
+                                            <div>
+                                                <h5>Recommendations:</h5>
+                                                <ul>
+                                                    <li>School Report Required</li>
+                                                    <li>Final Report Required</li>
+                                                    <li>Teacher Evaluation(s): Not Applicable</li>
+                                                    <li>Other Evaluation(s): Not Applicable</li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <h5>Saves school forms after matriculation:</h5>
+                                                <p>No</p>
+                                            </div>
+                                            <div>
+                                                <h5>Admission Requirements:</h5>
+                                                <p>ASU welcomes applications from students with diverse academic backgrounds and interests. A freshman is defined as a
+                                                student who has graduated from a regionally accredited high school and has completed fewer than 12 transferable college
+                                                credits post-high school. Freshman applicants who possess a high school diploma and meet the following requirements will
+                                                be admitted to ASU.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#writingRequirement" aria-expanded="true" aria-controls="writingRequirement">Writing
+                                                Requirement</button>
+                                        </h2>
+                                        <div id="writingRequirement" class="accordion-collapse collapse" data-bs-parent="demo">
+                                            <p>Hello Me</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>"
         </div>
     </div>
 </body>

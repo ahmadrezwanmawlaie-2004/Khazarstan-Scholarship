@@ -11,7 +11,8 @@ const collegeNames = document.querySelectorAll(".collegeName");
 const collegesDetail = document.getElementById("NewCollege");
 // The program iterate over the buttons of buttonsCs
 
-let j = 0;
+// Now I should have access to alerts
+const newCollegesAlerts = document.querySelectorAll(".alerts");
 
 // Now I want to access to the images
 const images = document.querySelectorAll(".csImgs");
@@ -21,7 +22,6 @@ let AddingCollege = () => {
     for (let i = 0; i < addCollegeButtons.length; i++) {
         
         addCollegeButtons[i].addEventListener("click", () => {
-            j++;
             const csNam = collegeNames[i].textContent.trim();
             if (addedCollege.has(csNam)) {
                 alert(`${collegeNames[i].innerHTML} is already added to Dashboard`);
@@ -110,9 +110,9 @@ let AddingCollege = () => {
             button2.id = `${i}111`;
             button2.onclick = function () {
                 const idToRemove = this.getAttribute("data-id");
+                newCollegesAlerts[i].style.display = "block";
                 newRow.remove();
                 localStorage.removeItem(idToRemove); // ❗ removes `${i}` from localStorage
-                newRow.remove();
                 saveAddedColleges();
             };
             buttonContainer2.appendChild(button2);
