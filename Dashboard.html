@@ -64,7 +64,7 @@
                                     <button class="btn-close" type="button" data-bs-dismiss="alert"></button>
                                     <strong>The university is removed from dashboard!</strong>
                                 </div>
-                                <div class="alert alert-dismissible alert-success fade show text-center alerts" style="display: none;">
+                                <div class="alert alert-dismissible alert-success fade show text-center alerts" role="alert" style="display: none;">
                                     <button class="btn-close" type="button" data-bs-dismiss="alert"></button>
                                     <strong>The university is removed from dashboard!</strong>
                                 </div>
@@ -91,7 +91,7 @@
                                 </div>
                                 <div class="input-group">
                                     <input type="text" class="form-control" id="searchBar" placeholder="Search for universities..." aria-label="Search">
-                                    <button type="button" class="btn btn-light" id="searchBarButton">Search</button>
+                                    
                                 </div>
                             </div>
                             <hr class="border border-2 border-info opacity-100 mt-2">
@@ -115,7 +115,7 @@
                                             </div>
                                         </div>
                                         <div class="d-flex flex-column">
-                                            <div class="mb-2"><button type="button" class="btn btn-outline-info btn">Details</button></div>
+                                            <div class="mb-2"><button type="button" data-bs-toggle="modal" data-bs-target="#KabulUniversity" class="btn btn-outline-info btn">Details</button></div>
                                             <div><button type="button"
                                                     class="btn btn-outline-info btn buttons">Remove</button></div>
                                         </div>
@@ -139,7 +139,8 @@
                                             </div>
                                         </div>
                                         <div class="d-flex flex-column">
-                                            <div class="mb-2"><button type="button" class="btn btn-outline-info btn">Details</button></div>
+                                            <div class="mb-2"><button type="button" data-bs-toggle="modal" data-bs-target="#khazarUniversity"
+                                                    class="btn btn-outline-info btn">Details</button></div>
                                             <div><button type="button"
                                                     class="btn btn-outline-info btn buttons">Remove</button></div>
                                         </div>
@@ -163,7 +164,8 @@
                                             </div>
                                         </div>
                                         <div class="d-flex flex-column">
-                                            <div class="mb-2"><button type="button" class="btn btn-outline-info btn">Details</button></div>
+                                            <div class="mb-2"><button type="button" data-bs-toggle="modal" data-bs-target="#brayanCollege"
+                                                    class="btn btn-outline-info btn">Details</button></div>
                                             <div><button type="button"
                                                     class="btn btn-outline-info btn buttons">Remove</button></div>
                                         </div>
@@ -187,7 +189,8 @@
                                             </div>
                                         </div>
                                         <div class="d-flex flex-column">
-                                            <div class="mb-2"><button type="button " class="btn btn-outline-info btn">Details</button></div>
+                                            <div class="mb-2"><button type="button" data-bs-toggle="modal" data-bs-target="#bayatCollege"
+                                                    class="btn btn-outline-info btn">Details</button></div>
                                             <div><button type="button"
                                                     class="btn btn-outline-info btn buttons">Remove</button></div>
                                         </div>
@@ -201,7 +204,7 @@
                                                     src="E:\WEB DEVELOPMENT\Khazarstan Scholarship\images\uni5.jpg" class="img-fluid">
                                             </div>
                                             <div>
-                                                <h4 style="font-family: Arial, Helvetica, sans-serif;" class="fw-bold college-name">Moryan Univerrsity</h4>
+                                                <h4 style="font-family: Arial, Helvetica, sans-serif;" class="fw-bold college-name">Moryan University</h4>
                                                 <h6><span id="decisionType1" class="text-black-50">Early Decision</span> : <span>Deadline - <span
                                                             id="deadline1" class="text-primary">Feb 15</span></span> <span class="text-success">
                                                         Completed</span></h6>
@@ -211,7 +214,8 @@
                                             </div>
                                         </div>
                                         <div class="d-flex flex-column">
-                                            <div class="mb-2"><button type="button" class="btn btn-outline-info btn">Details</button></div>
+                                            <div class="mb-2"><button type="button" data-bs-toggle="modal" data-bs-target="#moryanUniversity"
+                                                    class="btn btn-outline-info btn">Details</button></div>
                                             <div><button type="button"
                                                     class="btn btn-outline-info btn buttons">Remove</button></div>
                                         </div>
@@ -235,7 +239,8 @@
                                             </div>
                                         </div>
                                         <div class="d-flex flex-column">
-                                            <div class="mb-2"><button type="button" class="btn btn-outline-info btn">Details</button></div>
+                                            <div class="mb-2"><button type="button" data-bs-toggle="modal" data-bs-target="#kathryanCollege"
+                                                    class="btn btn-outline-info btn">Details</button></div>
                                             <div><button type="button"
                                                     class="btn btn-outline-info btn buttons">Remove</button></div>
                                         </div>
@@ -257,18 +262,18 @@
                         <div class="row">
                             <div class="d-flex justify-content-between align-items-center mt-2 gap-2">
                                 <div>
-                                    <h1 class="text-info fw-bold" style="font-family: 'Times New Roman', Times, serif;">Universities
+                                    <h1 class="text-info fw-bold" style="font-family: 'Times New Roman', Times, serif;">College Search
                                     </h1>
                                 </div>
                                 <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Search for universities..."
+                                    <input type="text" class="form-control" id="searchBarCollegeSearch" placeholder="Search for universities..."
                                         aria-label="Search">
-                                    <button type="button" class="btn btn-light">Search</button>
+                                    
                                 </div>
                             </div>
                             <hr class="border border-2 border-info opacity-100 mt-2">
                             <div>
-                                <div class="row rounded-2 shadow-lg mx-1  mb-2 csUniversities" id="cs1">
+                                <div class="row rounded-2 shadow-lg mx-1  mb-2 csUniversities colleges" id="cs1">
                                     <div class="d-flex p-3 justify-content-between gap-2">
                                         <div class="d-flex justify-content-center align-items-center gap-2">
                                             <div>
@@ -276,7 +281,7 @@
                                                     src="images\uni11.jpg" class="img-fluid">
                                             </div>
                                             <div>
-                                                <h4 style="font-family: Arial, Helvetica, sans-serif;" class="fw-bold collegeName" id="csName1">Polytechnic University</h4>
+                                                <h4 style="font-family: Arial, Helvetica, sans-serif;" class="fw-bold collegeName college-name" id="csName1">Polytechnic University</h4>
                                             </div>
                                         </div>
                                         <div class="d-flex flex-column">
@@ -286,7 +291,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row rounded-2 shadow-lg mx-1  mb-2 csUniversities" id="cs2">
+                                <div class="row rounded-2 shadow-lg mx-1  mb-2 csUniversities colleges" id="cs2">
                                     <div class="d-flex p-3 justify-content-between gap-2">
                                         <div class="d-flex justify-content-center align-items-center gap-2">
                                             <div>
@@ -294,7 +299,7 @@
                                                     src="images\uni12.jpg " class="img-fluid">
                                             </div>
                                             <div>
-                                                <h4 style="font-family: Arial, Helvetica, sans-serif;" class="fw-bold collegeName" id="csName2">Panama College</h4>
+                                                <h4 style="font-family: Arial, Helvetica, sans-serif;" class="fw-bold collegeName college-name" id="csName2">Panama College</h4>
                                             </div>
                                         </div>
                                         <div class="d-flex flex-column">
@@ -304,7 +309,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row rounded-2 shadow-lg mx-1  mb-2 csUniversities" id="cs3">
+                                <div class="row rounded-2 shadow-lg mx-1  mb-2 csUniversities colleges" id="cs3">
                                     <div class="d-flex p-3 justify-content-between gap-2">
                                         <div class="d-flex justify-content-center align-items-center gap-2">
                                             <div>
@@ -312,7 +317,7 @@
                                                     src="images\uni13.jpg" class="img-fluid">
                                             </div>
                                             <div>
-                                                <h4 style="font-family: Arial, Helvetica, sans-serif;" class="fw-bold collegeName" id="csName3">Somara College</h4>
+                                                <h4 style="font-family: Arial, Helvetica, sans-serif;" class="fw-bold collegeName college-name" id="csName3">Somara College</h4>
                                             </div>
                                         </div>
                                         <div class="d-flex flex-column">
@@ -322,7 +327,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row rounded-2 shadow-lg mx-1  mb-2 csUniversities" id="cs4">
+                                <div class="row rounded-2 shadow-lg mx-1  mb-2 csUniversities colleges" id="cs4">
                                     <div class="d-flex p-3 justify-content-between gap-2">
                                         <div class="d-flex justify-content-center align-items-center gap-2">
                                             <div>
@@ -330,7 +335,7 @@
                                                     src="images\uni14.jpg" class="img-fluid">
                                             </div>
                                             <div>
-                                                <h4 style="font-family: Arial, Helvetica, sans-serif;" class="fw-bold collegeName" id="csName4">Ghazni Universtiy</h4>
+                                                <h4 style="font-family: Arial, Helvetica, sans-serif;" class="fw-bold collegeName college-name" id="csName4">Ghazni Universtiy</h4>
                                             </div>
                                         </div>
                                         <div class="d-flex flex-column">
@@ -340,7 +345,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row rounded-2 shadow-lg mx-1  mb-2 csUniversities" id="cs5">
+                                <div class="row rounded-2 shadow-lg mx-1  mb-2 csUniversities colleges" id="cs5">
                                     <div class="d-flex p-3 justify-content-between gap-2">
                                         <div class="d-flex justify-content-center align-items-center gap-2">
                                             <div>
@@ -348,7 +353,7 @@
                                                     src="images\uni15.jpg" class="img-fluid">
                                             </div>
                                             <div>
-                                                <h4 style="font-family: Arial, Helvetica, sans-serif;" class="fw-bold collegeName" id="csName5">Balkh Universtiy</h4>
+                                                <h4 style="font-family: Arial, Helvetica, sans-serif;" class="fw-bold collegeName college-name" id="csName5">Balkh Universtiy</h4>
                                             </div>
                                         </div>
                                         <div class="d-flex flex-column">
@@ -358,7 +363,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row rounded-2 shadow-lg mx-1  mb-2 csUniversities" id="cs6">
+                                <div class="row rounded-2 shadow-lg mx-1  mb-2 csUniversities colleges" id="cs6">
                                     <div class="d-flex p-3 justify-content-between gap-2">
                                         <div class="d-flex justify-content-center align-items-center gap-2">
                                             <div>
@@ -367,7 +372,7 @@
                                                     class="img-fluid">
                                             </div>
                                             <div>
-                                                <h4 style="font-family: Arial, Helvetica, sans-serif;" class="fw-bold collegeName" id="csName6">Herat College</h4>
+                                                <h4 style="font-family: Arial, Helvetica, sans-serif;" class="fw-bold collegeName college-name" id="csName6">Herat College</h4>
                                             </div>
                                         </div>
                                         <div class="d-flex flex-column">
@@ -384,7 +389,870 @@
                 </div>
             </div>
         </div>
-        
+        <div class="modal fade bg-dark" id="KabulUniversity" data-bs-theme="dark">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header d-flex">
+                        <div class="row">
+                            <div class="col">
+                                <img class="img-fluid rounded-2" height="350" width="500" id="university1"
+                                    src=".\images\uni.jpg" class="img-fluid">
+                                <h1 class="text-white">Kabul University</h1>
+                                <span class="badge h6 bg-primary"><a href="Dashboard.html">Back</a></span>
+                            </div>
+                            <div class="col-8">
+                                <div class="d-flex">
+                                    <a href="emailto:kabul@uni.com" class="me-2">kabul@uni.com</a>
+                                    <p class="text-white-50">Phone<a href="phone:+93786884075">(480) 965-7788</a></p>
+                                </div>
+                                <div>
+                                    <p class="text-white">Student Services Building, 1151 S. Forest Ave. Tempe, AZ 85281 USA</p>
+                                </div>
+                                <hr class="border border-1 border-white-50 opacity-100">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <div class="d-flex flex-column">
+                                            <h4 class="text-white">Application deadlines</h4>
+                                            <div class="d-flex flex-column mt-2">
+                                                <h6 class="text-white">2025 Fall - (August)</h6>
+                                                <p class="text-white-50">Rolling Admission: July 27, 2025</p>
+                                            </div>
+                                            <div class="d-flex flex-column">
+                                                <h6 class="text-white">2025 Summer - (June)</h6>
+                                                <p class="text-white-50">Rolling Admission · May 15, 2025</p>
+                                            </div>
+                                            <div class="d-flex flex-column">
+                                                <h6 class="text-white">2025 Spring - (January)</h6>
+                                                <p class="text-white-50">Rolling Admission · January 08, 2025</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div>
+                                            <h4 class="text-white">Links</h4>
+                                            <ul>
+                                                <li><a href="#" class="text-info text-decoration-color">College website</a></li>
+                                                <li><a href="#" class="text-info text-decoration-color">Admission office</a>
+                                                </li>
+                                                <li><a href="#" class="text-info text-decoration-color">Financial aid</a></li>
+                                                <li><a href="#" class="text-info text-decoration-color">Virtual tour</a></li>
+                                                <li><a href="#" class="text-info text-decoration-color">College Navigator</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="accordion" id="demo">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#applicationInfo" aria-expanded="true"
+                                                    aria-controls="applicationInfo">Application
+                                                    Information</button>
+                                            </h2>
+                                            <div id="applicationInfo" class="accordion-collapse collapse show"
+                                                data-bs-parent="demo">
+                                                <div class="mt-2">
+                                                    <h5>Application Fees:</h5>
+                                                    <ul>
+                                                        <li>First Year International Fee - $85</li>
+                                                        <li>First Year Domestic Fee - $80</li>
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <h5>Standardized test policy:</h5>
+                                                    <ul>
+                                                        <li>Flexible</li>
+                                                        <li>See website</li>
+                                                        <li><a href="#">Test Police Information</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <h5>Accepted English proficiency tests:</h5>
+                                                    <p><a href="#">See website</a></p>
+                                                </div>
+                                                <div>
+                                                    <h5>Courses & Grades:</h5>
+                                                    <p>Required</p>
+                                                </div>
+                                                <div>
+                                                    <h5>Recommendations:</h5>
+                                                    <ul>
+                                                        <li>School Report Required</li>
+                                                        <li>Final Report Required</li>
+                                                        <li>Teacher Evaluation(s): Not Applicable</li>
+                                                        <li>Other Evaluation(s): Not Applicable</li>
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <h5>Saves school forms after matriculation:</h5>
+                                                    <p>No</p>
+                                                </div>
+                                                <div>
+                                                    <h5>Admission Requirements:</h5>
+                                                    <p>ASU welcomes applications from students with diverse academic backgrounds
+                                                        and interests. A freshman is defined as a
+                                                        student who has graduated from a regionally accredited high school and
+                                                        has completed fewer than 12 transferable college
+                                                        credits post-high school. Freshman applicants who possess a high school
+                                                        diploma and meet the following requirements will
+                                                        be admitted to ASU.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#writingRequirement" aria-expanded="true"
+                                                    aria-controls="writingRequirement">Writing
+                                                    Requirement</button>
+                                            </h2>
+                                            <div id="writingRequirement" class="accordion-collapse collapse"
+                                                data-bs-parent="demo">
+                                                <div>
+                                                    <h6 class="mt-3"><a href="#">Common App personal essay</a></h6>
+                                                    <p>Optional</p>
+                                                </div>
+                                                <div>
+                                                    <h6 class="mt-3"><a href="#">College Questions</a></h6>
+                                                    <p>There are no writing questions for this college.</p>
+                                                </div>
+                                                <div>
+                                                    <h6 class="mt-3">Writing Supplement</h6>
+                                                    <p>This college does not use a writing supplement for any additional writing
+                                                        requirements.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>"
+            </div>
+        </div>
+        <div class="modal fade bg-dark" id="khazarUniversity" data-bs-theme="dark">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header d-flex">
+                        <div class="row">
+                            <div class="col">
+                                <img class="img-fluid rounded-2" height="350" width="500" id="university1"
+                                    src=".\images\uni1.jpg" class="img-fluid">
+                                <h1 class="text-white">Khazar University</h1>
+                                <span class="badge h6 bg-primary"><a href="Dashboard.html">Back</a></span>
+                            </div>
+                            <div class="col-8">
+                                <div class="d-flex">
+                                    <a href="emailto:kabul@uni.com" class="me-2">khazar@uni.com</a>
+                                    <p class="text-white-50">Phone<a href="phone:+93786884075">(480) 965-7788</a></p>
+                                </div>
+                                <div>
+                                    <p class="text-white">Student Services Building, 1151 S. Forest Ave. Tempe, AZ 85281 USA</p>
+                                </div>
+                                <hr class="border border-1 border-white-50 opacity-100">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <div class="d-flex flex-column">
+                                            <h4 class="text-white">Application deadlines</h4>
+                                            <div class="d-flex flex-column mt-2">
+                                                <h6 class="text-white">2025 Fall - (August)</h6>
+                                                <p class="text-white-50">Rolling Admission: July 27, 2025</p>
+                                            </div>
+                                            <div class="d-flex flex-column">
+                                                <h6 class="text-white">2025 Summer - (June)</h6>
+                                                <p class="text-white-50">Rolling Admission · May 15, 2025</p>
+                                            </div>
+                                            <div class="d-flex flex-column">
+                                                <h6 class="text-white">2025 Spring - (January)</h6>
+                                                <p class="text-white-50">Rolling Admission · January 08, 2025</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div>
+                                            <h4 class="text-white">Links</h4>
+                                            <ul>
+                                                <li><a href="#" class="text-info text-decoration-color">College website</a></li>
+                                                <li><a href="#" class="text-info text-decoration-color">Admission office</a>
+                                                </li>
+                                                <li><a href="#" class="text-info text-decoration-color">Financial aid</a></li>
+                                                <li><a href="#" class="text-info text-decoration-color">Virtual tour</a></li>
+                                                <li><a href="#" class="text-info text-decoration-color">College Navigator</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="accordion" id="demo">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#applicationInfo" aria-expanded="true"
+                                                    aria-controls="applicationInfo">Application
+                                                    Information</button>
+                                            </h2>
+                                            <div id="applicationInfo" class="accordion-collapse collapse show"
+                                                data-bs-parent="demo">
+                                                <div class="mt-2">
+                                                    <h5>Application Fees:</h5>
+                                                    <ul>
+                                                        <li>First Year International Fee - $85</li>
+                                                        <li>First Year Domestic Fee - $80</li>
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <h5>Standardized test policy:</h5>
+                                                    <ul>
+                                                        <li>Flexible</li>
+                                                        <li>See website</li>
+                                                        <li><a href="#">Test Police Information</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <h5>Accepted English proficiency tests:</h5>
+                                                    <p><a href="#">See website</a></p>
+                                                </div>
+                                                <div>
+                                                    <h5>Courses & Grades:</h5>
+                                                    <p>Required</p>
+                                                </div>
+                                                <div>
+                                                    <h5>Recommendations:</h5>
+                                                    <ul>
+                                                        <li>School Report Required</li>
+                                                        <li>Final Report Required</li>
+                                                        <li>Teacher Evaluation(s): Not Applicable</li>
+                                                        <li>Other Evaluation(s): Not Applicable</li>
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <h5>Saves school forms after matriculation:</h5>
+                                                    <p>No</p>
+                                                </div>
+                                                <div>
+                                                    <h5>Admission Requirements:</h5>
+                                                    <p>ASU welcomes applications from students with diverse academic backgrounds
+                                                        and interests. A freshman is defined as a
+                                                        student who has graduated from a regionally accredited high school and
+                                                        has completed fewer than 12 transferable college
+                                                        credits post-high school. Freshman applicants who possess a high school
+                                                        diploma and meet the following requirements will
+                                                        be admitted to ASU.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#writingRequirement" aria-expanded="true"
+                                                    aria-controls="writingRequirement">Writing
+                                                    Requirement</button>
+                                            </h2>
+                                            <div id="writingRequirement" class="accordion-collapse collapse"
+                                                data-bs-parent="demo">
+                                                <div>
+                                                    <h6 class="mt-3"><a href="#">Common App personal essay</a></h6>
+                                                    <p>Optional</p>
+                                                </div>
+                                                <div>
+                                                    <h6 class="mt-3"><a href="#">College Questions</a></h6>
+                                                    <p>There are no writing questions for this college.</p>
+                                                </div>
+                                                <div>
+                                                    <h6 class="mt-3">Writing Supplement</h6>
+                                                    <p>This college does not use a writing supplement for any additional writing
+                                                        requirements.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>"
+            </div>
+        </div>
+        <div class="modal fade bg-dark" id="brayanCollege" data-bs-theme="dark">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header d-flex">
+                        <div class="row">
+                            <div class="col">
+                                <img class="img-fluid rounded-2" height="350" width="500" id="university1"
+                                    src=".\images\uni2.jpg" class="img-fluid">
+                                <h1 class="text-white">Brayan College</h1>
+                                <span class="badge h6 bg-primary"><a href="Dashboard.html">Back</a></span>
+                            </div>
+                            <div class="col-8">
+                                <div class="d-flex">
+                                    <a href="emailto:kabul@uni.com" class="me-2">brayn@uni.com</a>
+                                    <p class="text-white-50">Phone<a href="phone:+93786884075">(480) 965-7788</a></p>
+                                </div>
+                                <div>
+                                    <p class="text-white">Student Services Building, 1151 S. Forest Ave. Tempe, AZ 85281 USA</p>
+                                </div>
+                                <hr class="border border-1 border-white-50 opacity-100">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <div class="d-flex flex-column">
+                                            <h4 class="text-white">Application deadlines</h4>
+                                            <div class="d-flex flex-column mt-2">
+                                                <h6 class="text-white">2025 Fall - (August)</h6>
+                                                <p class="text-white-50">Rolling Admission: July 27, 2025</p>
+                                            </div>
+                                            <div class="d-flex flex-column">
+                                                <h6 class="text-white">2025 Summer - (June)</h6>
+                                                <p class="text-white-50">Rolling Admission · May 15, 2025</p>
+                                            </div>
+                                            <div class="d-flex flex-column">
+                                                <h6 class="text-white">2025 Spring - (January)</h6>
+                                                <p class="text-white-50">Rolling Admission · January 08, 2025</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div>
+                                            <h4 class="text-white">Links</h4>
+                                            <ul>
+                                                <li><a href="#" class="text-info text-decoration-color">College website</a></li>
+                                                <li><a href="#" class="text-info text-decoration-color">Admission office</a>
+                                                </li>
+                                                <li><a href="#" class="text-info text-decoration-color">Financial aid</a></li>
+                                                <li><a href="#" class="text-info text-decoration-color">Virtual tour</a></li>
+                                                <li><a href="#" class="text-info text-decoration-color">College Navigator</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="accordion" id="demo">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#applicationInfo" aria-expanded="true"
+                                                    aria-controls="applicationInfo">Application
+                                                    Information</button>
+                                            </h2>
+                                            <div id="applicationInfo" class="accordion-collapse collapse show"
+                                                data-bs-parent="demo">
+                                                <div class="mt-2">
+                                                    <h5>Application Fees:</h5>
+                                                    <ul>
+                                                        <li>First Year International Fee - $85</li>
+                                                        <li>First Year Domestic Fee - $80</li>
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <h5>Standardized test policy:</h5>
+                                                    <ul>
+                                                        <li>Flexible</li>
+                                                        <li>See website</li>
+                                                        <li><a href="#">Test Police Information</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <h5>Accepted English proficiency tests:</h5>
+                                                    <p><a href="#">See website</a></p>
+                                                </div>
+                                                <div>
+                                                    <h5>Courses & Grades:</h5>
+                                                    <p>Required</p>
+                                                </div>
+                                                <div>
+                                                    <h5>Recommendations:</h5>
+                                                    <ul>
+                                                        <li>School Report Required</li>
+                                                        <li>Final Report Required</li>
+                                                        <li>Teacher Evaluation(s): Not Applicable</li>
+                                                        <li>Other Evaluation(s): Not Applicable</li>
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <h5>Saves school forms after matriculation:</h5>
+                                                    <p>No</p>
+                                                </div>
+                                                <div>
+                                                    <h5>Admission Requirements:</h5>
+                                                    <p>ASU welcomes applications from students with diverse academic backgrounds
+                                                        and interests. A freshman is defined as a
+                                                        student who has graduated from a regionally accredited high school and
+                                                        has completed fewer than 12 transferable college
+                                                        credits post-high school. Freshman applicants who possess a high school
+                                                        diploma and meet the following requirements will
+                                                        be admitted to ASU.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#writingRequirement" aria-expanded="true"
+                                                    aria-controls="writingRequirement">Writing
+                                                    Requirement</button>
+                                            </h2>
+                                            <div id="writingRequirement" class="accordion-collapse collapse"
+                                                data-bs-parent="demo">
+                                                <div>
+                                                    <h6 class="mt-3"><a href="#">Common App personal essay</a></h6>
+                                                    <p>Optional</p>
+                                                </div>
+                                                <div>
+                                                    <h6 class="mt-3"><a href="#">College Questions</a></h6>
+                                                    <p>There are no writing questions for this college.</p>
+                                                </div>
+                                                <div>
+                                                    <h6 class="mt-3">Writing Supplement</h6>
+                                                    <p>This college does not use a writing supplement for any additional writing
+                                                        requirements.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>"
+            </div>
+        </div>
+        <div class="modal fade bg-dark" id="bayatCollege" data-bs-theme="dark">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header d-flex">
+                        <div class="row">
+                            <div class="col">
+                                <img class="img-fluid rounded-2" height="350" width="500" id="university1"
+                                    src=".\images\uni3.jpg" class="img-fluid">
+                                <h1 class="text-white">Bayat College</h1>
+                                <span class="badge h6 bg-primary"><a href="Dashboard.html">Back</a></span>
+                            </div>
+                            <div class="col-8">
+                                <div class="d-flex">
+                                    <a href="emailto:kabul@uni.com" class="me-2">bayat@uni.com</a>
+                                    <p class="text-white-50">Phone<a href="phone:+93786884075">(480) 965-7788</a></p>
+                                </div>
+                                <div>
+                                    <p class="text-white">Student Services Building, 1151 S. Forest Ave. Tempe, AZ 85281 USA</p>
+                                </div>
+                                <hr class="border border-1 border-white-50 opacity-100">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <div class="d-flex flex-column">
+                                            <h4 class="text-white">Application deadlines</h4>
+                                            <div class="d-flex flex-column mt-2">
+                                                <h6 class="text-white">2025 Fall - (August)</h6>
+                                                <p class="text-white-50">Rolling Admission: July 27, 2025</p>
+                                            </div>
+                                            <div class="d-flex flex-column">
+                                                <h6 class="text-white">2025 Summer - (June)</h6>
+                                                <p class="text-white-50">Rolling Admission · May 15, 2025</p>
+                                            </div>
+                                            <div class="d-flex flex-column">
+                                                <h6 class="text-white">2025 Spring - (January)</h6>
+                                                <p class="text-white-50">Rolling Admission · January 08, 2025</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div>
+                                            <h4 class="text-white">Links</h4>
+                                            <ul>
+                                                <li><a href="#" class="text-info text-decoration-color">College website</a></li>
+                                                <li><a href="#" class="text-info text-decoration-color">Admission office</a>
+                                                </li>
+                                                <li><a href="#" class="text-info text-decoration-color">Financial aid</a></li>
+                                                <li><a href="#" class="text-info text-decoration-color">Virtual tour</a></li>
+                                                <li><a href="#" class="text-info text-decoration-color">College Navigator</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="accordion" id="demo">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#applicationInfo" aria-expanded="true"
+                                                    aria-controls="applicationInfo">Application
+                                                    Information</button>
+                                            </h2>
+                                            <div id="applicationInfo" class="accordion-collapse collapse show"
+                                                data-bs-parent="demo">
+                                                <div class="mt-2">
+                                                    <h5>Application Fees:</h5>
+                                                    <ul>
+                                                        <li>First Year International Fee - $85</li>
+                                                        <li>First Year Domestic Fee - $80</li>
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <h5>Standardized test policy:</h5>
+                                                    <ul>
+                                                        <li>Flexible</li>
+                                                        <li>See website</li>
+                                                        <li><a href="#">Test Police Information</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <h5>Accepted English proficiency tests:</h5>
+                                                    <p><a href="#">See website</a></p>
+                                                </div>
+                                                <div>
+                                                    <h5>Courses & Grades:</h5>
+                                                    <p>Required</p>
+                                                </div>
+                                                <div>
+                                                    <h5>Recommendations:</h5>
+                                                    <ul>
+                                                        <li>School Report Required</li>
+                                                        <li>Final Report Required</li>
+                                                        <li>Teacher Evaluation(s): Not Applicable</li>
+                                                        <li>Other Evaluation(s): Not Applicable</li>
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <h5>Saves school forms after matriculation:</h5>
+                                                    <p>No</p>
+                                                </div>
+                                                <div>
+                                                    <h5>Admission Requirements:</h5>
+                                                    <p>ASU welcomes applications from students with diverse academic backgrounds
+                                                        and interests. A freshman is defined as a
+                                                        student who has graduated from a regionally accredited high school and
+                                                        has completed fewer than 12 transferable college
+                                                        credits post-high school. Freshman applicants who possess a high school
+                                                        diploma and meet the following requirements will
+                                                        be admitted to ASU.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#writingRequirement" aria-expanded="true"
+                                                    aria-controls="writingRequirement">Writing
+                                                    Requirement</button>
+                                            </h2>
+                                            <div id="writingRequirement" class="accordion-collapse collapse"
+                                                data-bs-parent="demo">
+                                                <div>
+                                                    <h6 class="mt-3"><a href="#">Common App personal essay</a></h6>
+                                                    <p>Optional</p>
+                                                </div>
+                                                <div>
+                                                    <h6 class="mt-3"><a href="#">College Questions</a></h6>
+                                                    <p>There are no writing questions for this college.</p>
+                                                </div>
+                                                <div>
+                                                    <h6 class="mt-3">Writing Supplement</h6>
+                                                    <p>This college does not use a writing supplement for any additional writing
+                                                        requirements.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>"
+            </div>
+        </div>
+        <div class="modal fade bg-dark" id="moryanUniversity" data-bs-theme="dark">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header d-flex">
+                        <div class="row">
+                            <div class="col">
+                                <img class="img-fluid rounded-2" height="350" width="500" id="university1"
+                                    src=".\images\uni5.jpg" class="img-fluid">
+                                <h1 class="text-white">Moryan University</h1>
+                                <span class="badge h6 bg-primary"><a href="Dashboard.html">Back</a></span>
+                            </div>
+                            <div class="col-8">
+                                <div class="d-flex">
+                                    <a href="emailto:kabul@uni.com" class="me-2">moryan@uni.com</a>
+                                    <p class="text-white-50">Phone<a href="phone:+93786884075">(480) 965-7788</a></p>
+                                </div>
+                                <div>
+                                    <p class="text-white">Student Services Building, 1151 S. Forest Ave. Tempe, AZ 85281 USA</p>
+                                </div>
+                                <hr class="border border-1 border-white-50 opacity-100">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <div class="d-flex flex-column">
+                                            <h4 class="text-white">Application deadlines</h4>
+                                            <div class="d-flex flex-column mt-2">
+                                                <h6 class="text-white">2025 Fall - (August)</h6>
+                                                <p class="text-white-50">Rolling Admission: July 27, 2025</p>
+                                            </div>
+                                            <div class="d-flex flex-column">
+                                                <h6 class="text-white">2025 Summer - (June)</h6>
+                                                <p class="text-white-50">Rolling Admission · May 15, 2025</p>
+                                            </div>
+                                            <div class="d-flex flex-column">
+                                                <h6 class="text-white">2025 Spring - (January)</h6>
+                                                <p class="text-white-50">Rolling Admission · January 08, 2025</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div>
+                                            <h4 class="text-white">Links</h4>
+                                            <ul>
+                                                <li><a href="#" class="text-info text-decoration-color">College website</a></li>
+                                                <li><a href="#" class="text-info text-decoration-color">Admission office</a>
+                                                </li>
+                                                <li><a href="#" class="text-info text-decoration-color">Financial aid</a></li>
+                                                <li><a href="#" class="text-info text-decoration-color">Virtual tour</a></li>
+                                                <li><a href="#" class="text-info text-decoration-color">College Navigator</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="accordion" id="demo">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#applicationInfo" aria-expanded="true"
+                                                    aria-controls="applicationInfo">Application
+                                                    Information</button>
+                                            </h2>
+                                            <div id="applicationInfo" class="accordion-collapse collapse show"
+                                                data-bs-parent="demo">
+                                                <div class="mt-2">
+                                                    <h5>Application Fees:</h5>
+                                                    <ul>
+                                                        <li>First Year International Fee - $85</li>
+                                                        <li>First Year Domestic Fee - $80</li>
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <h5>Standardized test policy:</h5>
+                                                    <ul>
+                                                        <li>Flexible</li>
+                                                        <li>See website</li>
+                                                        <li><a href="#">Test Police Information</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <h5>Accepted English proficiency tests:</h5>
+                                                    <p><a href="#">See website</a></p>
+                                                </div>
+                                                <div>
+                                                    <h5>Courses & Grades:</h5>
+                                                    <p>Required</p>
+                                                </div>
+                                                <div>
+                                                    <h5>Recommendations:</h5>
+                                                    <ul>
+                                                        <li>School Report Required</li>
+                                                        <li>Final Report Required</li>
+                                                        <li>Teacher Evaluation(s): Not Applicable</li>
+                                                        <li>Other Evaluation(s): Not Applicable</li>
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <h5>Saves school forms after matriculation:</h5>
+                                                    <p>No</p>
+                                                </div>
+                                                <div>
+                                                    <h5>Admission Requirements:</h5>
+                                                    <p>ASU welcomes applications from students with diverse academic backgrounds
+                                                        and interests. A freshman is defined as a
+                                                        student who has graduated from a regionally accredited high school and
+                                                        has completed fewer than 12 transferable college
+                                                        credits post-high school. Freshman applicants who possess a high school
+                                                        diploma and meet the following requirements will
+                                                        be admitted to ASU.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#writingRequirement" aria-expanded="true"
+                                                    aria-controls="writingRequirement">Writing
+                                                    Requirement</button>
+                                            </h2>
+                                            <div id="writingRequirement" class="accordion-collapse collapse"
+                                                data-bs-parent="demo">
+                                                <div>
+                                                    <h6 class="mt-3"><a href="#">Common App personal essay</a></h6>
+                                                    <p>Optional</p>
+                                                </div>
+                                                <div>
+                                                    <h6 class="mt-3"><a href="#">College Questions</a></h6>
+                                                    <p>There are no writing questions for this college.</p>
+                                                </div>
+                                                <div>
+                                                    <h6 class="mt-3">Writing Supplement</h6>
+                                                    <p>This college does not use a writing supplement for any additional writing
+                                                        requirements.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>"
+            </div>
+        </div>
+        <div class="modal fade bg-dark" id="kathryanCollege" data-bs-theme="dark">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header d-flex">
+                        <div class="row">
+                            <div class="col">
+                                <img class="img-fluid rounded-2" height="350" width="500" id="university1"
+                                    src=".\images\uni7.jpg" class="img-fluid">
+                                <h1 class="text-white">Kathryan College</h1>
+                                <span class="badge h6 bg-primary"><a href="Dashboard.html">Back</a></span>
+                            </div>
+                            <div class="col-8">
+                                <div class="d-flex">
+                                    <a href="emailto:kabul@uni.com" class="me-2">khathryan@uni.com</a>
+                                    <p class="text-white-50">Phone<a href="phone:+93786884075">(480) 965-7788</a></p>
+                                </div>
+                                <div>
+                                    <p class="text-white">Student Services Building, 1151 S. Forest Ave. Tempe, AZ 85281 USA</p>
+                                </div>
+                                <hr class="border border-1 border-white-50 opacity-100">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <div class="d-flex flex-column">
+                                            <h4 class="text-white">Application deadlines</h4>
+                                            <div class="d-flex flex-column mt-2">
+                                                <h6 class="text-white">2025 Fall - (August)</h6>
+                                                <p class="text-white-50">Rolling Admission: July 27, 2025</p>
+                                            </div>
+                                            <div class="d-flex flex-column">
+                                                <h6 class="text-white">2025 Summer - (June)</h6>
+                                                <p class="text-white-50">Rolling Admission · May 15, 2025</p>
+                                            </div>
+                                            <div class="d-flex flex-column">
+                                                <h6 class="text-white">2025 Spring - (January)</h6>
+                                                <p class="text-white-50">Rolling Admission · January 08, 2025</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div>
+                                            <h4 class="text-white">Links</h4>
+                                            <ul>
+                                                <li><a href="#" class="text-info text-decoration-color">College website</a></li>
+                                                <li><a href="#" class="text-info text-decoration-color">Admission office</a>
+                                                </li>
+                                                <li><a href="#" class="text-info text-decoration-color">Financial aid</a></li>
+                                                <li><a href="#" class="text-info text-decoration-color">Virtual tour</a></li>
+                                                <li><a href="#" class="text-info text-decoration-color">College Navigator</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="accordion" id="demo">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#applicationInfo" aria-expanded="true"
+                                                    aria-controls="applicationInfo">Application
+                                                    Information</button>
+                                            </h2>
+                                            <div id="applicationInfo" class="accordion-collapse collapse show"
+                                                data-bs-parent="demo">
+                                                <div class="mt-2">
+                                                    <h5>Application Fees:</h5>
+                                                    <ul>
+                                                        <li>First Year International Fee - $85</li>
+                                                        <li>First Year Domestic Fee - $80</li>
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <h5>Standardized test policy:</h5>
+                                                    <ul>
+                                                        <li>Flexible</li>
+                                                        <li>See website</li>
+                                                        <li><a href="#">Test Police Information</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <h5>Accepted English proficiency tests:</h5>
+                                                    <p><a href="#">See website</a></p>
+                                                </div>
+                                                <div>
+                                                    <h5>Courses & Grades:</h5>
+                                                    <p>Required</p>
+                                                </div>
+                                                <div>
+                                                    <h5>Recommendations:</h5>
+                                                    <ul>
+                                                        <li>School Report Required</li>
+                                                        <li>Final Report Required</li>
+                                                        <li>Teacher Evaluation(s): Not Applicable</li>
+                                                        <li>Other Evaluation(s): Not Applicable</li>
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <h5>Saves school forms after matriculation:</h5>
+                                                    <p>No</p>
+                                                </div>
+                                                <div>
+                                                    <h5>Admission Requirements:</h5>
+                                                    <p>ASU welcomes applications from students with diverse academic backgrounds
+                                                        and interests. A freshman is defined as a
+                                                        student who has graduated from a regionally accredited high school and
+                                                        has completed fewer than 12 transferable college
+                                                        credits post-high school. Freshman applicants who possess a high school
+                                                        diploma and meet the following requirements will
+                                                        be admitted to ASU.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#writingRequirement" aria-expanded="true"
+                                                    aria-controls="writingRequirement">Writing
+                                                    Requirement</button>
+                                            </h2>
+                                            <div id="writingRequirement" class="accordion-collapse collapse"
+                                                data-bs-parent="demo">
+                                                <div>
+                                                    <h6 class="mt-3"><a href="#">Common App personal essay</a></h6>
+                                                    <p>Optional</p>
+                                                </div>
+                                                <div>
+                                                    <h6 class="mt-3"><a href="#">College Questions</a></h6>
+                                                    <p>There are no writing questions for this college.</p>
+                                                </div>
+                                                <div>
+                                                    <h6 class="mt-3">Writing Supplement</h6>
+                                                    <p>This college does not use a writing supplement for any additional writing
+                                                        requirements.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>"
+            </div>
+        </div>
     </div>
 </body>
 <script src="E:\WEB DEVELOPMENT\Khazarstan Scholarship\javascript\Dashboard.js"></script>
