@@ -1,0 +1,30 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.registrationbody{
+    background:radial-gradient(circle at top right, #0b7ce6 10%, transparent 40%),
+    radial-gradient(circle at bottom left, #0e6dc5 10%, transparent 40%),
+    linear-gradient(270deg, #0b5acf, #0db5d6);
+    height: auto;
+}
+
+#khazarLogo:hover{
+    /* border-style: dotted; */
+    border:1px white dotted;
+    max-width: 100%;
+}
+
+.partContainer{
+    max-width: 500px;
+}
+
+.btnsize{
+    width: 200px;
+}
+
+#contentWelcome{
+    font-family: 'Times New Roman', Times, serif;
+}
