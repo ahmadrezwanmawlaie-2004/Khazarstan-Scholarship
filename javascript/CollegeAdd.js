@@ -130,6 +130,27 @@ function saveAddedColleges() {
 }
 function displayAddedColleges() {
     collegesDetail.innerHTML = localStorage.getItem("data");
+
+    // Reattach event listeners to all 'Remove' buttons
+    const removeButtons = collegesDetail.querySelectorAll(".buttons");
+
+    removeButtons.forEach(button => {
+        button.addEventListener("click", function () {
+            const idToRemove = this.getAttribute("data-id");
+
+            // Optional: show alert if it exists
+            const alertBox = document.querySelectorAll(".alerts")[idToRemove];
+            if (alertBox) alertBox.style.display = "block";
+
+            // Remove the row
+            const rowToRemove = document.getElementById(`${idToRemove}1111`);
+            if (rowToRemove) rowToRemove.remove();
+
+            localStorage.removeItem(idToRemove);
+            saveAddedColleges();
+        });
+    });
 }
+
 AddingCollege();
 displayAddedColleges();

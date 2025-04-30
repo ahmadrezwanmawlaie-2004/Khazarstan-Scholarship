@@ -4,14 +4,17 @@
     box-sizing: border-box;
 }
 
-.registrationbody{
+body{
     background:radial-gradient(circle at top right, #0b7ce6 10%, transparent 40%),
     radial-gradient(circle at bottom left, #0e6dc5 10%, transparent 40%),
     linear-gradient(270deg, #0b5acf, #0db5d6);
-    height: auto;
+    height:100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 #khazarLogo:hover{
+    cursor: pointer;
     /* border-style: dotted; */
     border:1px white dotted;
     max-width: 100%;
@@ -22,9 +25,32 @@
 }
 
 .btnsize{
-    width: 200px;
+    width: 250px;
+}
+.btnsize:hover{
+    animation-name: btn;
+    animation-timing-function: linear;
+    animation-duration: 0.4s;
+    animation-iteration-count: 2;
+    animation-fill-mode:both;
+    animation-direction: alternate;
+    cursor: pointer;
+}
+@keyframes btn {
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(-4px);
+    }
 }
 
 #contentWelcome{
     font-family: 'Times New Roman', Times, serif;
+}
+
+@media (100px <= width <= 900px){
+    #shapesLogos{
+        display: none;
+    }
 }
