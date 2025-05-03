@@ -23,7 +23,14 @@ body{
 .partContainer{
     max-width: 500px;
 }
-
+/* .partContainerFirstYear{
+    max-width: 1200px;
+} */
+@media (min-width: 800px) and (max-width: 1400px) {
+    .partContainerFirstYear {
+        width: 800px;
+    }
+}
 .btnsize{
     width: 250px;
 }
@@ -46,11 +53,20 @@ body{
 }
 
 #contentWelcome{
-    font-family: 'Times New Roman', Times, serif;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: small;
 }
 
-@media (100px <= width <= 900px){
+@media (100px <= width <= 600px){
     #shapesLogos{
         display: none;
     }
+    
 }
+
+#part2FirstyearStudent{
+    display: none;
+}
+/* #accountCreate{
+    font-weight:lighter;
+} */
