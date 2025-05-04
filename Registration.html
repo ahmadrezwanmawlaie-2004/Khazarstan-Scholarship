@@ -73,7 +73,7 @@
                 <div class="ms-4 mt-3 me-5">
                     <h3 id="accountCreate">Create your account</h3>
                     <div class="row mt-5">
-                        <div class="col">
+                        <div class="col ms-2">
                             <h5>Account information</h5>
                         </div>
                         <div class="col">
@@ -110,6 +110,102 @@
                                     <p><span class="text-secondary">&#10008</span> At least one number</p>
                                     <p><span class="text-secondary">&#10008</span> At least one special character</p>
                                     <p><span class="text-secondary">&#10008</span> No space characters</p>
+                                </div>
+                            </div>
+                            <div class="mt-5">
+                                <label for="password" class="form-label">Re-type Password</label>
+                                <input type="password" class="form-control mb-3" id="password" required>
+                                <!-- <div class="invalid-feedback">
+                                                                Please complete this required question.
+                                                            </div> -->
+                                <div class="mt-2">
+                                    <p><span class="text-secondary" id="">&#10008</span> Passwords must match</p>
+                                </div>
+                            </div>
+                            <div class="mt-5 form-check mb-5">
+                                <p>Which best describes you? I am:</p>
+                                <div class="mb-2">
+                                    <label class="form-check-label" for="checkbox1">Applying as a first-year student and plan to start college in 2024 or
+                                        2025</label>
+                                    <input type="radio" class="form-check-input" id="checkbox1" name="checkBox" required>
+                                </div>
+                                <div class="mb-2">
+                                    <label class="form-check-label" for="checkbox2">Planning to start college in 2026</label>
+                                    <input type="radio" class="form-check-input" id="checkbox2" name="checkBox" required>
+                                </div>
+                                
+                                <div class="mb-2">
+                                    <label class="form-check-label" for="checkbox3">Planning to start college in 2027 or beyond</label>
+                                    <input type="radio" class="form-check-input" id="checkbox3" name="checkBox" required>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="border-1 opacity-100 border-dark ms-3">
+                    <div class="row mt-5">
+                        <div class="col ms-2">
+                            <h5>Personal information</h5>
+                        </div>
+                        <div class="col">
+                            <div class="was-validated mb-3">
+                                <label for="firstname" class="form-label">Legal first/given name</label>
+                                <input type="text" id="firstname" class="form-control" required>
+                                <div class="invalid-feedback">
+                                    Please complete this required question.
+                                </div>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <p>Would you like to share a different first name that people call you?</p>
+                                <div class="mb-2">
+                                    <input type="radio" id="checkbox4" name="checkBox1" class="form-check-input" required>
+                                    <label for="checkbox4" class="form-check-label">Yes</label>
+                                </div>
+                                <div class="mb-2">
+                                    <input type="radio" id="checkbox5" name="checkBox1" class="form-check-input" required>
+                                    <label for="checkbox5" class="form-check-label">No</label>
+                                </div>
+                                <button class="btn btn-outline-dark rounded-5">Clear Answer</button>
+                            </div>
+                            <div class="mb-2 was-validated">
+                                <label for="lastName" class="form-label">Last/family/surname</label>
+                                <input type="text" id="lastName" class="form-control" required>
+                                <div class="invalid-feedback">
+                                    Please complete this required question.
+                                </div>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="mb-2 was-validated">
+                                <label for="birthdate" class="form-label">Date of birth</label>
+                                <input type="date" id="birthdate" class="form-control" required>
+                                <div class="invalid-feedback">
+                                    Please complete this required question.
+                                </div>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="border-1 opacity-100 border-dark ms-3">
+                    <div class="row mt-5">
+                        <div class="col ms-2">
+                            <h5>Contact details</h5>
+                        </div>
+                        <div class="col">
+                            <div class="was-validated">
+                                <label for="phoneNumber" class="form-label">Phone</label>
+                                <input type="tel" id="phoneNumber" class="form-control mb-3" required>
+                                <div class="invalid-feedback">
+                                    Please complete this required question.
+                                </div>
+                                <div class="valid-feedback">
+                                    Looks good!
                                 </div>
                             </div>
                         </div>
