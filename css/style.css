@@ -70,3 +70,13 @@ body{
 /* #accountCreate{
     font-weight:lighter;
 } */
+
+#plus{
+    font-size: larger;
+    font-weight: lighter;
+    color:#0b5acf;
+}
+#txt1{
+    font-size: smaller;
+    color:rgb(124, 131, 131);
+}
