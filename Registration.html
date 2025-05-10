@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css\style.css">
     <script defer src="javascript\js.js"></script>
 </head>
-<body class="registrationbody">
+<body class="registrationbody" id="registrationbody">
     <div id="part1Welcome" class="container-fluid">
         <div class="d-flex flex-column align-items-center">
             <div class="d-sm-flex justify-content-center mt-5 mb-5" >
@@ -29,7 +29,7 @@
                 </div>
                 <div class="button-group mt-4 mb-4 d-flex flex-column justify-content-center align-items-center" role="group">
                     <button type="button" id="firstYear" class="btn fw-semibold btn-primary mb-4 btn-lg btnsize  shadow-lg fs-6 rounded-4">First year student</button>
-                    <button type="button" class="btn fw-semibold btn-primary mb-4 btn-lg btnsize shadow-lg fs-6 rounded-4">Transfer student</button>
+                    <button type="button" id="transferStudent" class="btn fw-semibold btn-primary mb-4 btn-lg btnsize shadow-lg fs-6 rounded-4">Transfer student</button>
                     <button type="button" class="btn fw-semibold btn-primary mb-4 btn-lg btnsize shadow-lg fs-6 rounded-4">Education profession</button>
                     <button type="button" class="btn fw-semibold btn-primary mb-4 btn-lg btnsize shadow-lg fs-6 rounded-4">Parent or other adult</button>
                 </div>
@@ -75,6 +75,74 @@
                         <h2 id="accountCreate">Create your account</h2>
                         <div class="row mt-5">
                             <div class="col ms-2">
+                                <h5>Contact details</h5>
+                            </div>
+                            <div class="col">
+                                
+                                <button id="addressLocationButton" type="button" data-bs-toggle="modal" data-bs-target="#AddresssLocation"
+                                    class="btn btn-outline-primary rounded-5 mt-3 mb-3"><span id="plus">+</span>Add Address</button>
+                                <div class="was-validated">
+                                    <label for="phoneNumber" class="form-label">Phone</label>
+                                    <input type="tel" id="phoneNumber" class="form-control mb-3" required>
+                                    <div class="invalid-feedback">
+                                        Please complete this required question.
+                                    </div>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                </div>
+                                    <div class="modal fade" id="AddresssLocation" aria-label="modal">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content border-5 border-primary">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">Address Lookup</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="was-validated">
+                                                    <label for="addresses" class="form-label">Country/Region/Territory</label>
+                                                    <datalist id="countryList">
+                                                        <option value="United States"></option>
+                                                        <option value="Canada"></option>
+                                                        <option value="Mexico"></option>
+                                                        <option value="United Kingdom"></option>
+                                                        <option value="Australia"></option>
+                                                        <option value="Germany"></option>
+                                                        <option value="France"></option>
+                                                        <option value="Japan"></option>
+                                                        <option value="China"></option>
+                                                    </datalist>
+                                                    <input type="text" id="addresses" list="countryList" class="form-control mb-3" required>
+                                                    <div class="invalid-feedback">
+                                                        Please complete this required question.
+                                                    </div>
+                                                    <div class="valid-feedback">
+                                                        Looks good!
+                                                    </div>
+                                                </div>
+                                                <div class="was-validated mt-5">
+                                                    <label for="addressLoc" class="form-label">Address</label>
+                                                    <input type="text" id="addressLoc" class="form-control mb-3" required>
+                                                    <div class="invalid-feedback">
+                                                        Please complete this required question.
+                                                    </div>
+                                                    <div class="valid-feedback">
+                                                        Looks good!
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="submit" id="locationSubmission" class="btn btn-primary">Continue</button>
+                                                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="border-1 opacity-100 border-dark ms-3">
+                        <div class="row mt-5">
+                            <div class="col ms-2">
                                 <h5>Account information</h5>
                             </div>
                             <div class="col">
@@ -106,8 +174,7 @@
                                         <p><span class="text-secondary" id="x2">&#10008</span> At least one upper case</p>
                                         <p><span class="text-secondary" id="x3">&#10008</span> At least one lower case</p>
                                         <p><span class="text-secondary" id="x4">&#10008</span> At least one number</p>
-                                        <p><span class="text-secondary" id="x5">&#10008</span> At least one special character</p>
-                                        <p><span class="text-secondary" id="x6">&#10008</span> No space characters</p>
+                                        <p><span class="text-secondary" id="x5">&#10008</span> No space characters</p>
                                     </div>
                                 </div>
                                 <div class="mt-5">
@@ -116,25 +183,6 @@
                                     <div class="mt-2">
                                         <p><span class="text-secondary" id="x7">&#10008</span> Passwords must match</p>
                                     </div>
-                                </div>
-                                <div class="mt-5 form-check mb-5">
-                                    <p>Which best describes you? I am:</p>
-                                    <div class="mb-2">
-                                        <label class="form-check-label" for="checkbox1">Applying as a first-year student and plan to start
-                                            college in 2024 or
-                                            2025</label>
-                                        <input type="radio" class="form-check-input" id="checkbox1" name="checkBox" required>
-                                    </div>
-                                    <div class="mb-2">
-                                        <label class="form-check-label" for="checkbox2">Planning to start college in 2026</label>
-                                        <input type="radio" class="form-check-input" id="checkbox2" name="checkBox" required>
-                                    </div>
-                        
-                                    <div class="mb-2">
-                                        <label class="form-check-label" for="checkbox3">Planning to start college in 2027 or beyond</label>
-                                        <input type="radio" class="form-check-input" id="checkbox3" name="checkBox" required>
-                                    </div>
-                        
                                 </div>
                             </div>
                         </div>
@@ -153,18 +201,6 @@
                                     <div class="valid-feedback">
                                         Looks good!
                                     </div>
-                                </div>
-                                <div class="mb-3">
-                                    <p>Would you like to share a different first name that people call you?</p>
-                                    <div class="mb-2">
-                                        <input type="radio" id="checkbox4" name="checkBox1" class="form-check-input" required>
-                                        <label for="checkbox4" class="form-check-label">Yes</label>
-                                    </div>
-                                    <div class="mb-2">
-                                        <input type="radio" id="checkbox5" name="checkBox1" class="form-check-input" required>
-                                        <label for="checkbox5" class="form-check-label">No</label>
-                                    </div>
-                                    
                                 </div>
                                 <div class="mb-2 was-validated">
                                     <label for="lastName" class="form-label">Last/family/surname</label>
@@ -186,74 +222,24 @@
                                         Looks good!
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <hr class="border-1 opacity-100 border-dark ms-3">
-                        <div class="row mt-5">
-                            <div class="col ms-2">
-                                <h5>Contact details</h5>
-                            </div>
-                            <div class="col">
-                                <div class="was-validated">
-                                    <label for="phoneNumber" class="form-label">Phone</label>
-                                    <input type="tel" id="phoneNumber" class="form-control mb-3" required>
-                                    <div class="invalid-feedback">
-                                        Please complete this required question.
+                                <div class="mt-5 form-check mb-5">
+                                    <p>Which best describes you? I am:</p>
+                                    <div class="mb-2">
+                                        <label class="form-check-label" for="checkbox1">Applying as a first-year student and plan to start
+                                            college in 2024 or
+                                            2025</label>
+                                        <input type="radio" class="form-check-input" id="checkbox1" value="First Year" name="checkBox" required>
                                     </div>
-                                    <div class="valid-feedback">
-                                        Looks good!
+                                    <div class="mb-2">
+                                        <label class="form-check-label" for="checkbox2">Planning to start college in 2026</label>
+                                        <input type="radio" class="form-check-input" id="checkbox2" value="2026 College" name="checkBox" required>
                                     </div>
-                                </div>
-                                <button id="addressLocationButton" type="button" data-bs-toggle="modal" data-bs-target="#AddresssLocation"
-                                    class="btn btn-outline-primary rounded-5 mt-3 mb-3"><span id="plus">+</span>Add Address</button>
-                                <div class="modal fade" id="AddresssLocation" aria-label="modal">
-                                    <div class="modal-dialog modal-dialog-centered">
-                                        <div class="modal-content border-5 border-primary">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title">Address Lookup</h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div>
-                                            <form method="post">
-                                                <div class="modal-body">
-                                                    <div class="was-validated">
-                                                        <label for="address" class="form-label">Country/Region/Territory</label>
-                                                        <datalist id="countryList">
-                                                            <option value="United States"></option>
-                                                            <option value="Canada"></option>
-                                                            <option value="Mexico"></option>
-                                                            <option value="United Kingdom"></option>
-                                                            <option value="Australia"></option>
-                                                            <option value="Germany"></option>
-                                                            <option value="France"></option>
-                                                            <option value="Japan"></option>
-                                                            <option value="China"></option>
-                                                        </datalist>
-                                                        <input type="text" id="address" list="countryList" class="form-control mb-3" required>
-                                                        <div class="invalid-feedback">
-                                                            Please complete this required question.
-                                                        </div>
-                                                        <div class="valid-feedback">
-                                                            Looks good!
-                                                        </div>
-                                                    </div>
-                                                    <div class="was-validated mt-5">
-                                                        <label for="addressLoc" class="form-label">Address</label>
-                                                        <input type="text" id="addressLoc" class="form-control mb-3" required>
-                                                        <div class="invalid-feedback">
-                                                            Please complete this required question.
-                                                        </div>
-                                                        <div class="valid-feedback">
-                                                            Looks good!
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button type="submit" id="locationSubmission" class="btn btn-primary" data-bs-dismiss="modal">Continue</button>
-                                                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
-                                                </div>
-                                            </form>
-                                        </div>
+                                
+                                    <div class="mb-2">
+                                        <label class="form-check-label" for="checkbox3">Planning to start college in 2027 or beyond</label>
+                                        <input type="radio" class="form-check-input" id="checkbox3" value="2027 College" name="checkBox" required>
                                     </div>
+                                
                                 </div>
                             </div>
                         </div>
@@ -272,9 +258,9 @@
                                         Norway, Switzerland, or the United Kingdom?</label>
                                     <p id="txt1">Refer to our European Union General Data Protection Regulation FAQ for more information.</p>
                                     <label class="form-check-label" for="checkbox6">Yes</label>
-                                    <input type="radio" id="checkbox6" class="form-check-input" name="checkbox7" required>
+                                    <input type="radio" id="checkbox6" class="form-check-input" value="Yes" name="checkbox7" required>
                                     <label class="form-check-label" for="checkbox8">No</label>
-                                    <input type="radio" id="checkbox8" class="form-check-input" name="checkbox7" required>
+                                    <input type="radio" id="checkbox8" class="form-check-input" value="No" name="checkbox7" required>
                         
                                 </div>
                                 
@@ -284,10 +270,10 @@
                                         resources?</label>
                                     <p id="txt1">You may update this response and other communication preferences at any time in account
                                         settings.</p>
-                                    <label class="form-check-label" for="checkbox6">Yes</label>
-                                    <input type="radio" id="checkbox6" class="form-check-input" name="checkbox7" required>
-                                    <label class="form-check-label" for="checkbox8">No</label>
-                                    <input type="radio" id="checkbox8" class="form-check-input" name="checkbox7" required>
+                                    <label class="form-check-label" for="checkbox9">Yes</label>
+                                    <input type="radio" id="checkbox9" value="Yes" class="form-check-input" name="checkbox11" required>
+                                    <label class="form-check-label" for="checkbox10">No</label>
+                                    <input type="radio" id="checkbox10" value="No" class="form-check-input" name="checkbox11" required>
                                 </div>
                                 
                         
@@ -316,6 +302,21 @@
                 </div>
             </div>
         </div> 
+    </div>
+    <div id="part3TransfterStudent" class="container-fluid">
+        <div class="row" id="transfernav">
+            <div class="d-flex justify-content-center mt-3">
+                <div id="khazarLogo" class="d-flex justify-content-center align-items-center">
+                    <h2 id="headTitle" class="mt-4 text-info">khazar app</h2>
+                    <img class="img-fluid" alt="Logo" src="E:\WEB DEVELOPMENT\Khazarstan Scholarship\images\LinkLogo4.png"
+                        width="80" height="80">
+                </div>
+            </div>
+            <hr class="border-3 border-info opacity-100 border-top">
+        </div>
+        <div class="row" id="transfterBody">
+            <p>Hello</p>
+        </div>
     </div>
 </body>
 </html>

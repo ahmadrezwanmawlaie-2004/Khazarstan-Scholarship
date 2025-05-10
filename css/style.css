@@ -12,7 +12,6 @@ body{
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
-
 #khazarLogo:hover{
     cursor: pointer;
     /* border-style: dotted; */
@@ -79,4 +78,8 @@ body{
 #txt1{
     font-size: smaller;
     color:rgb(124, 131, 131);
+}
+
+#transfernav{
+    background-color: white;
 }
