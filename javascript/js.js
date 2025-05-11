@@ -4,7 +4,7 @@ document.getElementById("firstYear").addEventListener("click", () => {
     
 });
 document.getElementById("transferStudent").addEventListener("click", () => {
-    document.getElementById("registrationbody").style.backgroundColor = "#F3F3F3";
+    document.getElementById("registrationbody").style.background = "#F3F3F3";
     document.getElementById("part3TransfterStudent").style.display = "block";
     document.getElementById("part1Welcome").style.display = "none";
     

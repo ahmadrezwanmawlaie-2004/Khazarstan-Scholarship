@@ -315,7 +315,115 @@
             <hr class="border-3 border-info opacity-100 border-top">
         </div>
         <div class="row" id="transfterBody">
-            <p>Hello</p>
+            <p class="display-3 fw-normal text-black-50 text-center mt-2">Create an Account</p>  
+            <div class="container" id="transfterContainer">
+                <div class="row ms-3 me-3">
+                    <p class="text-start mt-3">
+                        The information below will be provided to the admissions offices at the programs to which you apply. Please provide
+                        complete and accurate information. Within the application, you will be able to specify additional addresses and
+                        alternate name details.
+                    </p>
+                    <p class="text-end"><span class="star">*</span>Indicates required field</p>
+                </div>
+                <hr class="border-1 ms-3 me-3 opacity-100 border-secondary">
+                <div class="row ms-3 me-3">
+                    <h2>Your Legal Name</h2>
+                    <div class="row mt-4">
+                        <div class="col">
+                            <div class="was-validated">
+                                <label for="fName" class="form-label">Legal First Name</label>
+                                <input type="text" id="fName" class="form-control" required>
+                                <div class="invalid-feedback">
+                                    Please complete this required question.
+                                </div>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="was-validated">
+                                <label for="mName" class="form-label">Middle Name</label>
+                                <input type="text" id="mName" class="form-control" required>
+                                <div class="invalid-feedback">
+                                    Please complete this required question.
+                                </div>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col">
+                            <div class="was-validated">
+                                <label for="lName" class="form-label">Last or Family Name</label>
+                                <input type="text" id="lName" class="form-control" required>
+                                <div class="invalid-feedback">
+                                    Please complete this required question.
+                                </div>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="was-validated">
+                                <label for="sName" class="form-label">Suffix (Jr., Sr., III, etc.)</label>
+                                <input type="text" id="sName" class="form-control" required>
+                                <div class="invalid-feedback">
+                                    Please complete this required question.
+                                </div>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="border-1 ms-3 me-3 opacity-100 border-secondary">
+                <div class="row ms-3 me-3">
+                    <h2>Contact Information</h2>
+                    <div class="row mt-3">
+                        <div class="col">
+                            <div class="was-validated">
+                                <label for="temail" class="form-label">Email Address</label>
+                                <input type="email" id="temail" class="form-control" required>
+                                <div class="dropdown mt-2">
+                                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                        Home
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown-item">Home</li>
+                                        <li class="dropdown-item">Work</li>
+                                        <li class="dropdown-item">School</li>
+                                    </ul>
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please complete this required question.
+                                </div>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="was-validated">
+                                <label for="tCemail" class="form-label">Confirm Email Address</label>
+                                <input type="email" id="tCemail" class="form-control" required>
+                                
+                                <div class="invalid-feedback">
+                                    Please complete this required question.
+                                </div>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
 </body>
