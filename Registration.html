@@ -421,8 +421,71 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row mt-3">
+                        <div class="col">
+                            <div class="was-validated">
+                                <label for="preferNumber" class="form-label">Preferred Phone Number</label>
+                                <input type="text" id="preferNumber" class="form-control" required>
+                                <div class="dropdown mt-2">
+                                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                        Home
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown-item">Home</li>
+                                        <li class="dropdown-item">Work</li>
+                                        <li class="dropdown-item">School</li>
+                                    </ul>
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please complete this required question.
+                                </div>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="was-validated">
+                                <label for="alternatePhone" class="form-label">Alternate Phone Number</label>
+                                <input type="text" id="alternatePhone" class="form-control" required>
+                                <div class="dropdown mt-2">
+                                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                        Home
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown-item">Home</li>
+                                        <li class="dropdown-item">Work</li>
+                                        <li class="dropdown-item">School</li>
+                                    </ul>
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please complete this required question.
+                                </div>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
+                <hr class="border-1 ms-3 me-3 opacity-100 border-secondary">
+                <div class="row ms-3 me-3">
+                    <h2>Text and Phone Authorization</h2>
+                    <div class="form-check ms-3 me-3">
+                        <input class="form-check-input" type="checkbox" id="textAuthorization">
+                        <label class="form-check-label" for="textAuthorization">I agree to the <button type="button" class="text-primary" data-bs-toggle="popover" data-bs-title="Terms of Service"
+                            data-bs-content="1. You must provide accurate and truthful information when applying.
+                            2. By applying, you consent to receive communications by phone, text, or email related to your application.
+                            3. Your information may be shared with affiliated institutions and support teams to process your application.
+                            4. Submission of false, misleading, or fraudulent information may result in disqualification or legal consequences."
+                            id="termsService">
+                            Terms of Service
+                        </button> and to receive calls and/or texts at any phone number I have provided or may provide in
+                        the future, including any wireless number, from any entity associated with my application process, including but not
+                        limited to my designated schools and programs, the Liaison International support team, the association or institution
+                        for this Centralized Application Service.</label>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

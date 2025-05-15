@@ -5,7 +5,7 @@ const addCollegeButtons = document.querySelectorAll(".buttonCs");
 const collegeContainers = document.querySelectorAll(".csUniversities");
 
 // The program should access to all college names.
-const collegeNames = document.querySelectorAll(".collegeName");
+const collegeNames = document.querySelectorAll(".mainCollegeName");
 
 // The program should also access to the allColleges containers
 const collegesDetail = document.getElementById("NewCollege");
@@ -18,6 +18,11 @@ const newCollegesAlerts = document.querySelectorAll(".alerts");
 const images = document.querySelectorAll(".csImgs");
 let addedCollege = new Set();
 
+const collegeNamess = document.querySelectorAll(".collegeName");
+// I create an array where the university names are added to it, and then I will
+// change the array to JSON and store that in the local storage
+let universityArray = [];
+
 let AddingCollege = () => {
     for (let i = 0; i < addCollegeButtons.length; i++) {
         
@@ -29,7 +34,9 @@ let AddingCollege = () => {
             }
             if (true) {
                 addedCollege.add(csNam);
+                universityArray.push( collegeNamess[i].textContent);
             }
+            
             localStorage.setItem(`${i}`, collegeNames[i].innerHTML);
             // Now I show create a row
             const newRow = document.createElement("div");
@@ -99,6 +106,7 @@ let AddingCollege = () => {
 
             ndivInDiv2.appendChild(buttonContainer1);
 
+            localStorage.setItem("jsonUniversities", JSON.stringify(universityArray));
 
             // The second div and button inside the second div
             const buttonContainer2 = document.createElement("div");
@@ -151,6 +159,12 @@ function displayAddedColleges() {
         });
     });
 }
+
+// Now I change the university array to JSON
+// const jsonObject = JSON.stringify(addedCollege);
+
+// const objectJson = JSON.parse(jsonObject);
+// console.log(objectJson[0])
 
 AddingCollege();
 displayAddedColleges();

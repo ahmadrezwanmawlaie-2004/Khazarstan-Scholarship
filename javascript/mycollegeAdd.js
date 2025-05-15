@@ -1,6 +1,8 @@
+const universities = JSON.parse(localStorage.getItem("jsonUniversities"));
 window.addEventListener("load", () => {
     for (let i = 0; i < localStorage.length; i++) {
         const savedText = localStorage.getItem(`${i}`);
+        const aimedUniversity = universities[i];
         if (savedText) {
             const uniContainer = document.createElement("div");
             uniContainer.className = "card";
@@ -34,7 +36,8 @@ window.addEventListener("load", () => {
             const cardButton = document.createElement("button");
             cardButton.type = "button";
             cardButton.className = "btn btn-info border border-1 border-white buttons btn-block text-start rounded-3 text-white uniFont";
-            cardButton.setAttribute("data-target", `${i}11`);
+            cardButton.setAttribute("data-bs-toggle", "modal");
+            cardButton.setAttribute("data-bs-target", `#${aimedUniversity}`);
             cardButton.innerHTML = "College Information";
             cardTitle.appendChild(cardButton);
 
@@ -97,4 +100,6 @@ window.addEventListener("load", () => {
         };
     };
 });
+
+
     
