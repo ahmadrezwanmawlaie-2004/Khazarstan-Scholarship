@@ -97,3 +97,9 @@ body{
     font-size: 30px;
     
 }
+.txts{
+    max-width: 400px;
+}
+textarea p{
+    text-align: justify;
+}
