@@ -30,8 +30,7 @@
                 <div class="button-group mt-4 mb-4 d-flex flex-column justify-content-center align-items-center" role="group">
                     <button type="button" id="firstYear" class="btn fw-semibold btn-primary mb-4 btn-lg btnsize  shadow-lg fs-6 rounded-4">First year student</button>
                     <button type="button" id="transferStudent" class="btn fw-semibold btn-primary mb-4 btn-lg btnsize shadow-lg fs-6 rounded-4">Transfer student</button>
-                    <button type="button" class="btn fw-semibold btn-primary mb-4 btn-lg btnsize shadow-lg fs-6 rounded-4">Education profession</button>
-                    <button type="button" class="btn fw-semibold btn-primary mb-4 btn-lg btnsize shadow-lg fs-6 rounded-4">Parent or other adult</button>
+                    
                 </div>
             </div>
             <div class="mt-5 d-sm-flex" id="shapesLogos">
@@ -71,234 +70,151 @@
             </div>
             <div class="bg-white d-flex flex-column partContainerFirstYear rounded-5 border border-5 border-info" id="partContainerFirstYear">
                 <div class="ms-4 mt-3 me-5">
-                    <form method="post">
-                        <h2 id="accountCreate">Create your account</h2>
-                        <div class="row mt-5">
-                            <div class="col ms-2">
-                                <h5>Contact details</h5>
-                            </div>
-                            <div class="col">
-                                
-                                <button id="addressLocationButton" type="button" data-bs-toggle="modal" data-bs-target="#AddresssLocation"
-                                    class="btn btn-outline-primary rounded-5 mt-3 mb-3"><span id="plus">+</span>Add Address</button>
-                                <div class="was-validated">
-                                    <label for="phoneNumber" class="form-label">Phone</label>
-                                    <input type="tel" id="phoneNumber" class="form-control mb-3" required>
-                                    <div class="invalid-feedback">
-                                        Please complete this required question.
-                                    </div>
-                                    <div class="valid-feedback">
-                                        Looks good!
-                                    </div>
+                    <h2 id="accountCreate">Create your account</h2>
+                    <div class="row mt-5">
+                        <div class="col ms-2">
+                            <h5>Account information</h5>
+                        </div>
+                        <div class="col">
+                            <div class="was-validated">
+                                <label for="emailAdress" class="form-label">Email Address</label>
+                                <input type="email" class="form-control mb-3 fstInput firstYearTexts" id="emailAdress" required>
+                                <div class="invalid-feedback">
+                                    Please complete this required question.
                                 </div>
-                                    <div class="modal fade" id="AddresssLocation" aria-label="modal">
-                                    <div class="modal-dialog modal-dialog-centered">
-                                        <div class="modal-content border-5 border-primary">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title">Address Lookup</h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <div class="was-validated">
-                                                    <label for="addresses" class="form-label">Country/Region/Territory</label>
-                                                    <datalist id="countryList">
-                                                        <option value="United States"></option>
-                                                        <option value="Canada"></option>
-                                                        <option value="Mexico"></option>
-                                                        <option value="United Kingdom"></option>
-                                                        <option value="Australia"></option>
-                                                        <option value="Germany"></option>
-                                                        <option value="France"></option>
-                                                        <option value="Japan"></option>
-                                                        <option value="China"></option>
-                                                    </datalist>
-                                                    <input type="text" id="addresses" list="countryList" class="form-control mb-3" required>
-                                                    <div class="invalid-feedback">
-                                                        Please complete this required question.
-                                                    </div>
-                                                    <div class="valid-feedback">
-                                                        Looks good!
-                                                    </div>
-                                                </div>
-                                                <div class="was-validated mt-5">
-                                                    <label for="addressLoc" class="form-label">Address</label>
-                                                    <input type="text" id="addressLoc" class="form-control mb-3" required>
-                                                    <div class="invalid-feedback">
-                                                        Please complete this required question.
-                                                    </div>
-                                                    <div class="valid-feedback">
-                                                        Looks good!
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="submit" id="locationSubmission" class="btn btn-primary">Continue</button>
-                                                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="was-validated mt-3">
+                                <label for="retypeemailAdress" class="form-label">Re-type Email Address</label>
+                                <input type="email" class="form-control mb-3 fstInput firstYearTexts" id="retypeemailAdress" required>
+                                <div class="invalid-feedback">
+                                    Please complete this required question.
+                                </div>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="mt-5">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control mb-3 fstInput firstYearTexts" id="password" required>
+                            </div>
+                            <div class="mt-5">
+                                <label for="repassword" class="form-label">Re-type Password</label>
+                                <input type="password" class="form-control mb-3 firstYearTexts" id="repassword" required>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="border-1 opacity-100 border-dark ms-3">
+                    <div class="row mt-5">
+                        <div class="col ms-2">
+                            <h5>Personal information</h5>
+                        </div>
+                        <div class="col">
+                            <div class="was-validated mb-3">
+                                <label for="firstname" class="form-label">Legal first/given name</label>
+                                <input type="text" id="firstname" class="form-control firstYearTexts" required>
+                                <div class="invalid-feedback">
+                                    Please complete this required question.
+                                </div>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="mb-2 was-validated">
+                                <label for="lastName" class="form-label">Last/family/surname</label>
+                                <input type="text" id="lastName" class="form-control firstYearTexts" required>
+                                <div class="invalid-feedback">
+                                    Please complete this required question.
+                                </div>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="mb-2 was-validated">
+                                <label for="birthdate" class="form-label">Date of birth</label>
+                                <input type="date" id="birthdate" class="form-control firstYearTexts" required>
+                                <div class="invalid-feedback">
+                                    Please complete this required question.
+                                </div>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="mt-5 form-check mb-5">
+                                <p>Which best describes you? I am:</p>
+                                <div class="mb-2">
+                                    <label class="form-check-label" for="checkbox1">Applying as a first-year student and plan to start
+                                        college in 2024 or
+                                        2025</label>
+                                    <input type="radio" class="form-check-input" id="checkbox1" value="First Year" name="checkBox" required>
+                                </div>
+                                <div class="mb-2">
+                                    <label class="form-check-label" for="checkbox2">Planning to start college in 2026</label>
+                                    <input type="radio" class="form-check-input" id="checkbox2" value="2026 College" name="checkBox"
+                                        required>
+                                </div>
+                    
+                                <div class="mb-2">
+                                    <label class="form-check-label" for="checkbox3">Planning to start college in 2027 or beyond</label>
+                                    <input type="radio" class="form-check-input" id="checkbox3" value="2027 College" name="checkBox"
+                                        required>
+                                </div>
+                    
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="border-1 opacity-100 border-dark ms-3">
+                    <div class="row mt-5">
+                        <div class="col ms-2">
+                            <h5>Privacy policy and preferences</h5>
+                        </div>
+                        <div class="col">
+                            <h6 class="mb-3">Common App will process and share your information in accordance with our privacy policy. If
+                                you have any concerns
+                                regarding our privacy practices, please do not use our services.</h6>
+                    
+                            <div class=" mb-3">
+                                <label class="form-label">Are you currently based in a European Union country, Iceland, Liechtenstein,
+                                    Norway, Switzerland, or the United Kingdom?</label>
+                                <p id="txt1">Refer to our European Union General Data Protection Regulation FAQ for more information.</p>
+                                <label class="form-check-label" for="checkbox6">Yes</label>
+                                <input type="radio" id="checkbox6" class="form-check-input" value="Yes" name="checkbox7" required>
+                                <label class="form-check-label" for="checkbox8">No</label>
+                                <input type="radio" id="checkbox8" class="form-check-input" value="No" name="checkbox7" required>
+                    
+                            </div>
+                            <div class=" mb-3 mt-5">
+                                <label class="form-label">Would you like to receive communications from Common App about opportunities and
+                                    resources?</label>
+                                <p id="txt1">You may update this response and other communication preferences at any time in account
+                                    settings.</p>
+                                <label class="form-check-label" for="checkbox9">Yes</label>
+                                <input type="radio" id="checkbox9" value="Yes" class="form-check-input" name="checkbox11" required>
+                                <label class="form-check-label" for="checkbox10">No</label>
+                                <input type="radio" id="checkbox10" value="No" class="form-check-input" name="checkbox11" required>
+                            </div>
+                            <div class="mt-3">
+                                <p>Please review the following:</p>
+                                <div class="mb-2">
+                                    <label for="checkbox9" class="form-check-label">By checking this box, I agree to the terms of use. If I
+                                        am under the age
+                                        of 18, I represent that my parent or legal
+                                        guardian also agrees to the terms of use on my behalf.</label>
+                                    <input type="checkbox" id="checkbox9" class="form-check-input" required>
                                 </div>
                             </div>
                         </div>
-                        <hr class="border-1 opacity-100 border-dark ms-3">
-                        <div class="row mt-5">
-                            <div class="col ms-2">
-                                <h5>Account information</h5>
-                            </div>
-                            <div class="col">
-                                <div class="was-validated">
-                                    <label for="emailAdress" class="form-label">Email Address</label>
-                                    <input type="email" class="form-control mb-3 fstInput" id="emailAdress" required>
-                                    <div class="invalid-feedback">
-                                        Please complete this required question.
-                                    </div>
-                                    <div class="valid-feedback">
-                                        Looks good!
-                                    </div>
-                                </div>
-                                <div class="was-validated mt-3">
-                                    <label for="retypeemailAdress" class="form-label">Re-type Email Address</label>
-                                    <input type="email" class="form-control mb-3 fstInput" id="retypeemailAdress" required>
-                                    <div class="invalid-feedback">
-                                        Please complete this required question.
-                                    </div>
-                                    <div class="valid-feedback">
-                                        Looks good!
-                                    </div>
-                                </div>
-                                <div class="mt-5">
-                                    <label for="password" class="form-label">Password</label>
-                                    <input type="password" class="form-control mb-3 fstInput" id="password" required>
-                                    <div class="mt-2">
-                                        <p><span class="text-secondary" id="x1">&#10008</span> 10-32 characters</p>
-                                        <p><span class="text-secondary" id="x2">&#10008</span> At least one upper case</p>
-                                        <p><span class="text-secondary" id="x3">&#10008</span> At least one lower case</p>
-                                        <p><span class="text-secondary" id="x4">&#10008</span> At least one number</p>
-                                        <p><span class="text-secondary" id="x5">&#10008</span> No space characters</p>
-                                    </div>
-                                </div>
-                                <div class="mt-5">
-                                    <label for="repassword" class="form-label">Re-type Password</label>
-                                    <input type="password" class="form-control mb-3" id="repassword" required>
-                                    <div class="mt-2">
-                                        <p><span class="text-secondary" id="x7">&#10008</span> Passwords must match</p>
-                                    </div>
-                                </div>
-                            </div>
+                    </div>
+                    <hr class="border-1 opacity-100 border-dark ms-3">
+                    <div class="row mt-5 mb-5">
+                        <div class="col d-flex justify-content-end">
+                            <button class="btn btn-outline-secondary rounded-5 me-2">Cancel</button>
+                            <button class="btn btn-primary rounded-5" id="FirstYearStudentAccount" type="button">Create account</button>
                         </div>
-                        <hr class="border-1 opacity-100 border-dark ms-3">
-                        <div class="row mt-5">
-                            <div class="col ms-2">
-                                <h5>Personal information</h5>
-                            </div>
-                            <div class="col">
-                                <div class="was-validated mb-3">
-                                    <label for="firstname" class="form-label">Legal first/given name</label>
-                                    <input type="text" id="firstname" class="form-control" required>
-                                    <div class="invalid-feedback">
-                                        Please complete this required question.
-                                    </div>
-                                    <div class="valid-feedback">
-                                        Looks good!
-                                    </div>
-                                </div>
-                                <div class="mb-2 was-validated">
-                                    <label for="lastName" class="form-label">Last/family/surname</label>
-                                    <input type="text" id="lastName" class="form-control" required>
-                                    <div class="invalid-feedback">
-                                        Please complete this required question.
-                                    </div>
-                                    <div class="valid-feedback">
-                                        Looks good!
-                                    </div>
-                                </div>
-                                <div class="mb-2 was-validated">
-                                    <label for="birthdate" class="form-label">Date of birth</label>
-                                    <input type="date" id="birthdate" class="form-control" required>
-                                    <div class="invalid-feedback">
-                                        Please complete this required question.
-                                    </div>
-                                    <div class="valid-feedback">
-                                        Looks good!
-                                    </div>
-                                </div>
-                                <div class="mt-5 form-check mb-5">
-                                    <p>Which best describes you? I am:</p>
-                                    <div class="mb-2">
-                                        <label class="form-check-label" for="checkbox1">Applying as a first-year student and plan to start
-                                            college in 2024 or
-                                            2025</label>
-                                        <input type="radio" class="form-check-input" id="checkbox1" value="First Year" name="checkBox" required>
-                                    </div>
-                                    <div class="mb-2">
-                                        <label class="form-check-label" for="checkbox2">Planning to start college in 2026</label>
-                                        <input type="radio" class="form-check-input" id="checkbox2" value="2026 College" name="checkBox" required>
-                                    </div>
-                                
-                                    <div class="mb-2">
-                                        <label class="form-check-label" for="checkbox3">Planning to start college in 2027 or beyond</label>
-                                        <input type="radio" class="form-check-input" id="checkbox3" value="2027 College" name="checkBox" required>
-                                    </div>
-                                
-                                </div>
-                            </div>
-                        </div>
-                        <hr class="border-1 opacity-100 border-dark ms-3">
-                        <div class="row mt-5">
-                            <div class="col ms-2">
-                                <h5>Privacy policy and preferences</h5>
-                            </div>
-                            <div class="col">
-                                <h6 class="mb-3">Common App will process and share your information in accordance with our privacy policy. If
-                                    you have any concerns
-                                    regarding our privacy practices, please do not use our services.</h6>
-                        
-                                <div class=" mb-3">
-                                    <label class="form-label">Are you currently based in a European Union country, Iceland, Liechtenstein,
-                                        Norway, Switzerland, or the United Kingdom?</label>
-                                    <p id="txt1">Refer to our European Union General Data Protection Regulation FAQ for more information.</p>
-                                    <label class="form-check-label" for="checkbox6">Yes</label>
-                                    <input type="radio" id="checkbox6" class="form-check-input" value="Yes" name="checkbox7" required>
-                                    <label class="form-check-label" for="checkbox8">No</label>
-                                    <input type="radio" id="checkbox8" class="form-check-input" value="No" name="checkbox7" required>
-                        
-                                </div>
-                                
-                        
-                                <div class=" mb-3 mt-5">
-                                    <label class="form-label">Would you like to receive communications from Common App about opportunities and
-                                        resources?</label>
-                                    <p id="txt1">You may update this response and other communication preferences at any time in account
-                                        settings.</p>
-                                    <label class="form-check-label" for="checkbox9">Yes</label>
-                                    <input type="radio" id="checkbox9" value="Yes" class="form-check-input" name="checkbox11" required>
-                                    <label class="form-check-label" for="checkbox10">No</label>
-                                    <input type="radio" id="checkbox10" value="No" class="form-check-input" name="checkbox11" required>
-                                </div>
-                                
-                        
-                                <div class="mt-3">
-                                    <p>Please review the following:</p>
-                                    <div class="mb-2">
-                                        <label for="checkbox9" class="form-check-label">By checking this box, I agree to the terms of use. If I
-                                            am under the age
-                                            of 18, I represent that my parent or legal
-                                            guardian also agrees to the terms of use on my behalf.</label>
-                                        <input type="checkbox" id="checkbox9" class="form-check-input" required>
-                        
-                                    </div>
-                        
-                                </div>
-                            </div>
-                        </div>
-                        <hr class="border-1 opacity-100 border-dark ms-3">
-                        <div class="row mt-5 mb-5">
-                            <div class="col d-flex justify-content-end">
-                                <button class="btn btn-outline-secondary rounded-5 me-2">Cancel</button>
-                                <button class="btn btn-primary rounded-5" id="saveForm" type="button">Create account</button>
-                            </div>
-                        </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div> 
